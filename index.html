@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Financiamiento Inteligente para PYMEs</title>
+  <link rel="stylesheet" href="src/css/main.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="font-sans antialiased text-gray-600">
+
+  <div id="app" class="min-h-screen flex flex-col">
+    <!-- Top Bar for specific functionality -->
+    <!-- <div class="bg-black text-white py-2 px-4 text-sm border-b border-gray-800">
+      <div class="max-w-screen-2xl mx-auto px-4 sm:px-6">
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-2 text-center">
+          <span class="font-weight">¿Has obtenido NEOTEC? Asegura hoy los fondos para ejecutar tu proyecto con
+            éxito</span>
+          <a href="#neotec-section" class="font-medium underline hover:text-indigo-900 transition-colors">
+            Conoce más →
+          </a>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Navigation Component -->
+    <nav class="full-width-bg bg-white border-b border-gray-200 py-4 sticky top-0 z-50">
+      <div class="section-container flex justify-between items-center max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="flex items-center">
+          <!-- Logo SVG -->
+          <a href="#">
+            <div class="flex items-center">
+              <img src="assets/images/logo.svg" alt="Logo FinanciaPYME" class="h-8">
+            </div>
+          </a>
+          <span class="text-2xl font-bold text-indigo-600"></span>
+        </div>
+
+        <!-- Menú para desktop -->
+        <div class="hidden md:flex space-x-6">
+          <a href="#problem" class="text-gray-500 font-weight px-4 py-2 hover:text-gray-700">Problema</a>
+          <a href="#solution" class="text-gray-500 font-weight px-4 py-2 hover:text-gray-700">Solución</a>
+          <a href="#benefits" class="text-gray-500 font-weight px-4 py-2 hover:text-gray-700">Beneficios</a>
+        </div>
+
+        <div class="flex items-center space-x-2 sm:space-x-4 nav-buttons">
+          <!-- Botón Agendar llamada - más pequeño en móvil -->
+          <button id="heroReserveBtn"
+            class="bg-violet-700 text-white font-medium mx-2 px-2 py-2 md:px-6 md:py-3 rounded-md shadow-md hover:bg-violet-800 hover:shadow-lg transition-all duration-300 ease-in-out text-sm md:text-base">
+            Agendar llamada
+          </button>
+
+          <!-- Botón hamburguesa para móvil -->
+          <button id="mobileMenuBtn" class="md:hidden p-2 text-gray-500 hover:text-gray-700">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Menú móvil -->
+      <div id="mobileMenu" class="md:hidden hidden bg-white border-t border-gray-200">
+        <div class="px-4 py-4 space-y-4">
+          <a href="#problem" class="block text-gray-500 font-weight py-2 hover:text-gray-700">Problema</a>
+          <a href="#solution" class="block text-gray-500 font-weight py-2 hover:text-gray-700">Solución</a>
+          <a href="#benefits" class="block text-gray-500 font-weight py-2 hover:text-gray-700">Beneficios</a>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="bg-white pt-20 text-center">
+      <div class="max-w-4xl mx-auto">
+        <h1 class="text-gray-900 text-5xl md:text-6xl font-medium leading-tight mb-10">
+          Obtén <span class="text-violet-700">financiación para tu empresa</span> fácil y rápido
+        </h1>
+        <p class="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
+          Accede a crédito comparando múltiples entidades en un solo lugar
+        </p>
+
+        <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4 mb-16">
+          <button id="heroSolutionBtn"
+            class="bg-violet-700 text-white font-medium px-6 py-3 rounded-md shadow-md hover:bg-violet-800 hover:shadow-lg transition-all duration-300 ease-in-out">
+            Solicitar financiación
+          </button>
+
+          <button id="discoverMoreBtn"
+            class="bg-transparent text-gray-500 border border-gray-200 font-weight px-6 py-3 rounded-md hover:text-gray-700 hover:border-gray-300 transition-all">
+            Descubre más
+          </button>
+        </div>
+        <div class="mb-12">
+          <p class="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-60 grayscale mt-8">
+          </p>
+          <div class="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-70 grayscale mt-8">
+            <img src="assets/images/BBVA.png" alt="Bank 1" class="h-12">
+            <img src="assets/images/caixa.png" alt="Bank 2" class="h-12">
+            <img src="assets/images/santander.png" alt="Bank 3" class="h-12">
+            <img src="assets/images/sabadell.png" alt="Bank 4" class="h-12">
+          </div>
+        </div>
+      </div>
+
+      <section class="full-width-container bg-indigo-50 py-16">
+        <div class="max-w-7xl mx-auto px-6 flex">
+          <div class="flex w-full px-50">
+            <img src="assets/images/dashboard-header.jpeg">
+          </div>
+      </section>
+
+      <!-- Problem Section (Bento Grid with Gradient + Animations) -->
+      <section id="problem" class="relative py-24 px-6 bg-gradient-to-b from-black via-purple-950 to-black">
+        <div class="max-w-6xl mx-auto">
+          <!-- Title -->
+          <h2 class="text-2xl md:text-4xl font-bold text-purple-100 mb-12 text-center">
+            La financiación bancaria puede ser transparente y sin fricciones
+          </h2>
+
+          <!-- Bento Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-6 gap-6">
+            <!-- Card 1 -->
+            <div class="md:col-span-3 card-animate bg-purple-900/20 border border-purple-600 rounded-xl p-6">
+              <h3 class="text-xl font-semibold text-white mb-3">Convierte el papeleo en una ventaja</h3>
+              <p class="text-gray-300">
+                Centralizamos toda tu documentación en un data room seguro y lo preparamos según la información que pide
+                cada entidad.
+              </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="md:col-span-3 card-animate delay-200 bg-purple-900/20 border border-purple-600 rounded-xl p-6">
+              <h3 class="text-xl font-semibold text-white mb-3">Transparencia en cada paso</h3>
+              <p class="text-gray-300">
+                Gana visibilidad total sobre tiempos de tu solicitud y compara las condiciones de distintas entidades
+                para elegir la que más te conviene.
+              </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div
+              class="md:col-span-4 md:row-span-2 card-animate delay-400 bg-purple-900/20 border border-purple-600 rounded-xl p-6 flex flex-col justify-center">
+              <h3 class="text-xl font-semibold text-white mb-3">Condiciones claras desde el inicio</h3>
+              <p class="text-gray-300">
+                Olvídate de las sorpresas de última hora: accede a tasas y comisiones transparentes que te permiten
+                planear con seguridad el futuro financiero de tu negocio.
+              </p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="md:col-span-2 card-animate delay-600 bg-purple-900/20 border border-purple-600 rounded-xl p-6">
+              <h3 class="text-xl font-semibold text-white mb-3"> Sorpresas al final</h3>
+              <p class="text-gray-300">
+                Tasas, comisiones y cláusulas que terminan golpeando la salud financiera de tu negocio.
+              </p>
+            </div>
+          </div>
+
+          <!-- CTA -->
+          <div class="text-center mt-16 card-animate delay-800">
+            <button id="problemCtaBtn"
+              class="border border-purple-600 text-purple-400 font-medium px-6 py-3 rounded-md hover:bg-purple-600 hover:text-white transition-all">
+              Descubre cómo simplificar tu acceso a crédito
+            </button>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Solution Section -->
+      <section id="solution" class="relative py-24 px-6 bg-gradient-to-b from-indigo-50 via-white to-indigo-100">
+        <div class="max-w-6xl mx-auto">
+          <!-- Title -->
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-16 text-center">
+            Conecta con la financiación que tu negócio necesita
+          </h2>
+
+          <!-- Steps -->
+          <div class="grid md:grid-cols-3 gap-10">
+            <!-- Step 1 -->
+            <div
+              class="card-animate delay-200 bg-white/70 backdrop-blur-md border border-indigo-100 rounded-2xl p-8 shadow-lg hover:shadow-2xl hover:scale-105 transition">
+              <div
+                class="w-16 h-16 rounded-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white flex items-center justify-center text-2xl font-bold mx-auto mb-6 shadow-lg">
+                1
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-4 text-center">
+                Completa una sola solicitud
+              </h3>
+              <p class="text-gray-700 text-center">
+                Una solicitud simple que se comparte con múltiples instituciones financieras.
+              </p>
+            </div>
+
+            <!-- Step 2 -->
+            <div
+              class="card-animate delay-400 bg-white/70 backdrop-blur-md border border-indigo-100 rounded-2xl p-8 shadow-lg hover:shadow-2xl hover:scale-105 transition">
+              <div
+                class="w-16 h-16 rounded-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white flex items-center justify-center text-2xl font-bold mx-auto mb-6 shadow-lg">
+                2
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-4 text-center">
+                Compara ofertas en tiempo real
+              </h3>
+              <p class="text-gray-700 text-center">
+                Recibe y compara múltiples ofertas de financiamiento en una sola plataforma.
+              </p>
+            </div>
+
+            <!-- Step 3 -->
+            <div
+              class="card-animate delay-600 bg-white/70 backdrop-blur-md border border-indigo-100 rounded-2xl p-8 shadow-lg hover:shadow-2xl hover:scale-105 transition">
+              <div
+                class="w-16 h-16 rounded-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white flex items-center justify-center text-2xl font-bold mx-auto mb-6 shadow-lg">
+                3
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-4 text-center">
+                Elige y activa tu financiamiento
+              </h3>
+              <p class="text-gray-700 text-center">
+                Selecciona la mejor opción y activa tu financiamiento en pocos días.
+              </p>
+            </div>
+          </div>
+
+          <button id="solutionCtaBtn"
+            class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-semibold mt-10 px-8 py-4 rounded-md shadow-lg hover:shadow-2xl hover:scale-105 transition">
+            Reserva una llamada y comienza hoy
+          </button>
+        </div>
+      </section>
+
+
+      <!-- Key Benefits Section -->
+      <section id="benefits" class="bg-white py-24 px-6">
+        <div class="mx-auto">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
+            Razones por las que los CEOs eligen nuestra plataforma
+          </h2>
+
+          <div class="grid md:grid-cols-3 gap-8 mb-16">
+            <div class="bg-gray-50 border border-gray-200 rounded-xl p-8 card-hover">
+              <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">Tiempo es poder</h3>
+              <p class="text-gray-600">No pierden semanas en trámites. Prefieren una sola solicitud que abre la puerta a
+                múltiples bancos y acelera las respuestas.</p>
+            </div>
+
+            <div class="bg-gray-50 border border-gray-200 rounded-xl p-8 card-hover">
+              <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">Decisiones con visión estratégica</h3>
+              <p class="text-gray-600">Se necesita certeza. Aquí tienen visibilidad total de tasas, comisiones y plazos,
+                desde el primer momento..</p>
+            </div>
+
+            <div class="bg-gray-50 border border-gray-200 rounded-xl p-8 card-hover">
+              <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">Transparencia total</h3>
+              <p class="text-gray-600">Sin sorpresas. Conoce todas las condiciones desde el principio sin letras
+                pequeñas.</p>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <button id="benefitsReserveBtn"
+              class="bg-indigo-600 text-white font-semibold px-6 py-3 rounded-md hover:bg-indigo-700 transition-all">
+              Habla con un experto y acelera tu financiamiento
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
+          Lo que dicen otros CEOs de PYMEs
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-8 mb-16">
+          <div class="bg-white rounded-xl p-8 shadow-md card-hover">
+            <div class="flex items-center mb-6">
+              <img src="https://placehold.co/60x60/6366F1/FFFFFF?text=J" alt="Juan Pérez" class="rounded-full mr-4">
+              <div>
+                <h3 class="font-semibold text-gray-900">Juan Pérez</h3>
+                <p class="text-gray-500">CEO, TechSolutions</p>
+              </div>
+            </div>
+            <p class="text-gray-600 italic">"En solo 72 horas conseguimos 3 ofertas de financiamiento. El proceso
+              tradicional nos hubiera llevado semanas. Una herramienta indispensable para cualquier PYME."</p>
+          </div>
+
+          <div class="bg-white rounded-xl p-8 shadow-md card-hover">
+            <div class="flex items-center mb-6">
+              <img src="https://placehold.co/60x60/6366F1/FFFFFF?text=M" alt="María García" class="rounded-full mr-4">
+              <div>
+                <h3 class="font-semibold text-gray-900">María García</h3>
+                <p class="text-gray-500">Directora, DesignStudio</p>
+              </div>
+            </div>
+            <p class="text-gray-600 italic">"La transparencia del proceso nos permitió comparar manzanas con manzanas.
+              Encontramos una línea de crédito con mejores condiciones de las que hubiéramos conseguido por nuestra
+              cuenta."</p>
+          </div>
+        </div>
+
+        <div class="text-center mb-2">
+          <button id="testimonialsReserveBtn"
+            class="bg-indigo-600 text-white font-semibold px-6 py-3 rounded-md hover:bg-indigo-700 transition-all">
+            Reserva tu llamada gratuita hoy
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section class="bg-gray-50 py-24 px-6">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
+          Preguntas frecuentes
+        </h2>
+
+        <div class="space-y-4" id="faqsContainer">
+          <!-- Las FAQs se generarán dinámicamente con JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="bg-gradient-to-b from-black via-indigo-950 to-black py-24 px-">
+      <div class="mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+          Simplificamos el acceso a la financiación de tu empresa
+        </h2>
+        <p class="text-gray-300 text-xl mb-10">
+
+          Nos encargamos de todo el proceso y te exponemos las mejores alternativas para que tú decidas.
+        </p>
+
+        <button id="solutionCtaBtn2"
+          class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-semibold px-8 py-4 rounded-md shadow-lg hover:shadow-2xl hover:scale-105 transition">
+          Reserva una llamada y comienza hoy
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="bg-gradient-to-b from-black via-indigo-950 to-black text-gray-400 py-12 px-6 border-t border-gray-950">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <div class="text-white text-2xl font-semibold mb-4">Lemi Finance</div>
+          <p class="mb-4">La plataforma que simplifica el acceso a financiación para pequeñas y medianas empresas.</p>
+        </div>
+
+        <div>
+          <h3 class="text-white font-medium mb-4">Enlaces rápidos</h3>
+          <ul class="space-y-2">
+            <li><a href="#problem" class="hover:text-white">Problema</a></li>
+            <li><a href="#solution" class="hover:text-white">Solución</a></li>
+            <li><a href="#benefits" class="hover:text-white">Beneficios</a></li>
+            <li><a href="#testimonials" class="hover:text-white">Testimonios</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-white font-medium mb-4">Legal</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-white">Términos de servicio</a></li>
+            <li><a href="#" class="hover:text-white">Política de privacidad</a></li>
+            <li><a href="#" class="hover:text-white">Cookies</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-white font-medium mb-4">Contacto</h3>
+          <ul class="space-y-2">
+            <li>info@lemi.es</li>
+            <li>+34 617 434 266</li>
+            <li>Comunidad Valenciana, España</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="max-w-7xl mx-auto mt-8 pt-8 border-t border-gray-950 text-center">
+        <p>© 2023 Lemi Finance. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="fixed inset-0 z-50 overflow-y-auto hidden">
+      <div class="modal-overlay fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm" id="modalOverlay"></div>
+
+      <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+        <div
+          class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-2xl">
+          <div class="bg-white px-6 py-4 border-b border-gray-200 flex justify-between items-center">
+            <h3 class="text-lg font-semibold text-gray-900">Agenda una llamada</h3>
+            <button id="closeModalBtn" class="text-gray-400 hover:text-gray-600 text-2xl">&times;</button>
+          </div>
+
+          <div class="bg-white px-6 py-10">
+            <p class="text-gray-600 mb-6">Completa el formulario y un especialista se pondrá en contacto contigo en
+              menos de 24 horas.</p>
+
+            <form class="space-y-4" id="reservationForm">
+              <div>
+                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nombre completo</label>
+                <input type="text" id="name"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+                  required>
+              </div>
+
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                <input type="email" id="email"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+                  required>
+              </div>
+
+              <div>
+                <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Teléfono</label>
+                <input type="tel" id="phone"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+                  required>
+              </div>
+
+              <div>
+                <label for="company" class="block text-sm font-medium text-gray-700 mb-1">Empresa</label>
+                <input type="text" id="company"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+                  required>
+              </div>
+
+              <div>
+                <label for="cif" class="block text-sm font-medium text-gray-700 mb-1">CIF/NIF</label>
+                <input type="text" id="cif"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+                  placeholder="Ej: A12345678" required maxlength="9">
+                <p class="text-xs text-gray-500 mt-1">Formato: Letra + 8 números (CIF) o 8 números + letra (NIF)</p>
+              </div>
+
+              <div>
+                <label for="message" class="block text-sm font-medium text-gray-700 mb-1">¿En qué podemos
+                  ayudarte?</label>
+                <textarea id="message" rows="3"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+              </div>
+
+              <div class="pt-4">
+                <button type="submit"
+                  class="w-full bg-indigo-600 text-white font-semibold px-4 py-3 rounded-md hover:bg-indigo-700 transition-all">
+                  Reservar llamada gratuita
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Botón flotante de WhatsApp -->
+  <a href="https://wa.me/34617434266?text=Hola,%20me%20interesa%20saber%20más%20sobre%20la%20financiación%20para%20mi%20empresa"
+    class="whatsapp-float" target="_blank" id="whatsappFloatBtn">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</body>
+
+<script>
+
+  // Main JavaScript for FinanciaPYME landing page
+
+  document.addEventListener('DOMContentLoaded', function () {
+    // Modal functionality
+    const modal = document.getElementById('modal');
+    const modalOverlay = document.getElementById('modalOverlay');
+    const closeModalBtn = document.getElementById('closeModalBtn');
+    const reserveCallBtn = document.getElementById('reserveCallBtn');
+    const heroReserveBtn = document.getElementById('heroReserveBtn');
+    const solutionReserveBtn = document.getElementById('solutionReserveBtn');
+    const benefitsReserveBtn = document.getElementById('benefitsReserveBtn');
+    const testimonialsReserveBtn = document.getElementById('testimonialsReserveBtn');
+    const finalCtaBtn = document.getElementById('finalCtaBtn');
+    const reservationForm = document.getElementById('reservationForm');
+    const discoverMoreBtn = document.getElementById('discoverMoreBtn');
+    const problemCtaBtn = document.getElementById('problemCtaBtn');
+    const solutionCtaBtn = document.getElementById('solutionCtaBtn');
+    const solutionCtaBtn2 = document.getElementById('solutionCtaBtn2');
+    const heroSolutionBtn = document.getElementById('heroSolutionBtn');
+
+    // Open modal function
+    function openModal() {
+      modal.classList.remove('hidden');
+      setTimeout(() => {
+        modalOverlay.classList.add('active');
+      }, 10);
+      document.body.style.overflow = 'hidden';
+    }
+
+    // Close modal function
+    function closeModal() {
+      modalOverlay.classList.remove('active');
+      setTimeout(() => {
+        modal.classList.add('hidden');
+      }, 300);
+      document.body.style.overflow = 'auto';
+    }
+
+    // Event listeners for opening modal
+    if (reserveCallBtn) reserveCallBtn.addEventListener('click', openModal);
+    if (heroReserveBtn) heroReserveBtn.addEventListener('click', openModal);
+    if (solutionReserveBtn) solutionReserveBtn.addEventListener('click', openModal);
+    if (benefitsReserveBtn) benefitsReserveBtn.addEventListener('click', openModal);
+    if (testimonialsReserveBtn) testimonialsReserveBtn.addEventListener('click', openModal);
+    if (finalCtaBtn) finalCtaBtn.addEventListener('click', openModal);
+    if (discoverMoreBtn) discoverMoreBtn.addEventListener('click', openModal);
+    if (problemCtaBtn) problemCtaBtn.addEventListener('click', openModal);
+    if (solutionCtaBtn) solutionCtaBtn.addEventListener('click', openModal);
+    if (solutionCtaBtn2) solutionCtaBtn2.addEventListener('click', openModal);
+    if (heroSolutionBtn) heroSolutionBtn.addEventListener('click', openModal);
+
+    // Event listeners for closing modal
+    if (closeModalBtn) closeModalBtn.addEventListener('click', closeModal);
+    if (modalOverlay) modalOverlay.addEventListener('click', closeModal);
+
+    // Form submission - Envío por WhatsApp
+    if (reservationForm) {
+      reservationForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        // Get form data
+        const formData = {
+          name: document.getElementById('name').value,
+          email: document.getElementById('email').value,
+          phone: document.getElementById('phone').value,
+          company: document.getElementById('company').value,
+          message: document.getElementById('message').value
+        };
+
+        // Crear mensaje para WhatsApp
+        const whatsappMessage = `
+            ¡Hola! Me interesa la financiación para mi empresa:
+
+            *Nombre:* ${formData.name}
+            *Email:* ${formData.email}
+            *Teléfono:* ${formData.phone}
+            *Empresa:* ${formData.company}
+            *Mensaje:* ${formData.message || 'Sin mensaje adicional'}
+
+            Por favor, contáctenme para agendar una llamada.`;
+
+        // Codificar el mensaje para URL
+        const encodedMessage = encodeURIComponent(whatsappMessage);
+
+        // Número de WhatsApp (reemplaza con tu número)
+        const phoneNumber = '34617434266'; // Formato internacional sin +
+
+        // Crear URL de WhatsApp
+        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+        // Abrir WhatsApp
+        window.open(whatsappUrl, '_blank');
+
+        // Mostrar mensaje de confirmación
+        alert('¡Redirigiendo a WhatsApp! Un especialista se pondrá en contacto contigo pronto.');
+
+        // Close modal and reset form
+        closeModal();
+        reservationForm.reset();
+      });
+    }
+    // WhatsApp float button functionality
+    const whatsappFloatBtn = document.getElementById('whatsappFloatBtn');
+
+    if (whatsappFloatBtn) {
+      // Puedes agregar funcionalidad adicional aquí si es necesario
+      console.log('Botón de WhatsApp listo');
+    }
+    // FAQ functionality
+    const faqs = [
+      {
+        question: "¿Cuánto tiempo tarda el proceso de financiamiento?",
+        answer: "Nuestro proceso está diseñado para ser rápido y eficiente. Una vez que completes tu solicitud, podrás recibir ofertas en tan solo 48-72 horas. La activación del financiamiento puede tomar entre 3 y 7 días hábiles, dependiendo de la institución financiera seleccionada."
+      },
+      {
+        question: "¿Qué documentación necesito para solicitar financiamiento?",
+        answer: "Los requisitos varían según el tipo de financiamiento y la institución, pero generalmente necesitarás: identificación oficial, estados financieros de los últimos 2 años, declaraciones fiscales, y comprobantes de domicilio de la empresa y del representante legal. Nuestra plataforma te guiará paso a paso sobre los documentos específicos requeridos."
+      },
+      {
+        question: "¿Hay algún costo por usar la plataforma?",
+        answer: "El uso de nuestra plataforma es completamente gratuito para las empresas que buscan financiamiento. Solo cobramos una comisión cuando tu empresa acepta y activa exitosamente un financiamiento a través de nuestra plataforma."
+      },
+      {
+        question: "¿Qué tipos de financiamiento están disponibles?",
+        answer: "Trabajamos con una amplia gama de productos financieros incluyendo préstamos a plazo, líneas de crédito, factoring, arrendamiento financiero, y financiamiento para proyectos específicos como NEOTEC. Nuestra plataforma te ayuda a identificar qué tipo de financiamiento es el más adecuado para tu empresa."
+      },
+      {
+        question: "¿Cómo garantizan la seguridad de mis datos financieros?",
+        answer: "La seguridad de tus datos es nuestra máxima prioridad. Utilizamos encriptación de grado bancario, cumplimos con todas las regulaciones de protección de datos (GDPR, LOPD) y nunca compartimos tu información sin tu consentimiento explícito. Puedes consultar nuestra política de privacidad para más detalles."
+      }
+    ];
+
+    const faqsContainer = document.getElementById('faqsContainer');
+
+    if (faqsContainer) {
+      faqs.forEach((faq, index) => {
+        const faqElement = document.createElement('div');
+        faqElement.className = 'faq-item';
+        faqElement.innerHTML = `
+                <div class="faq-question" id="faq-question-${index}">
+                    <span>${faq.question}</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <div class="faq-answer" id="faq-answer-${index}">
+                    <p class="pb-6 text-gray-600">${faq.answer}</p>
+                </div>
+            `;
+
+        faqsContainer.appendChild(faqElement);
+
+        // Add click event to toggle FAQ answer
+        const questionEl = document.getElementById(`faq-question-${index}`);
+        const answerEl = document.getElementById(`faq-answer-${index}`);
+
+        questionEl.addEventListener('click', () => {
+          answerEl.classList.toggle('active');
+
+          // Rotate icon
+          const icon = questionEl.querySelector('svg');
+          icon.classList.toggle('transform');
+          icon.classList.toggle('rotate-180');
+        });
+      });
+    }
+
+    // Navigation scroll effect
+    const nav = document.querySelector('nav');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          const navHeight = nav.offsetHeight;
+          const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navHeight;
+
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+
+    // Animation on scroll
+    function initAnimations() {
+      const animatedElements = document.querySelectorAll('.card-hover, .progress-bar');
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-fade-in');
+          }
+        });
+      }, {
+        threshold: 0.1
+      });
+
+      animatedElements.forEach(el => {
+        observer.observe(el);
+      });
+    }
+
+    initAnimations();
+  });
+
+  // Mobile menu functionality
+  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  if (mobileMenuBtn && mobileMenu) {
+    mobileMenuBtn.addEventListener('click', function () {
+      mobileMenu.classList.toggle('hidden');
+      mobileMenu.classList.toggle('open');
+
+      // Cambiar icono del botón
+      const icon = mobileMenuBtn.querySelector('svg');
+      if (mobileMenu.classList.contains('hidden')) {
+        icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>';
+      } else {
+        icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>';
+      }
+    });
+
+    // Cerrar menú al hacer clic en un enlace
+    const mobileLinks = mobileMenu.querySelectorAll('a');
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', function () {
+        mobileMenu.classList.add('hidden');
+        mobileMenu.classList.remove('open');
+        mobileMenuBtn.querySelector('svg').innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>';
+      });
+    });
+    // CIF/NIF validation function
+    function validateCIF(cif) {
+      // Eliminar espacios y convertir a mayúsculas
+      cif = cif.trim().toUpperCase();
+
+      // Patrón para CIF (Letra + 7 u 8 números)
+      const cifPattern = /^[ABCDEFGHJNPQRSUVW]{1}\d{7}[\dJ]$/;
+
+      // Patrón para NIF (8 números + Letra)
+      const nifPattern = /^\d{8}[TRWAGMYFPDXBNJZSQVHLCKET]$/;
+
+      // Validar formato
+      if (!cifPattern.test(cif) && !nifPattern.test(cif)) {
+        return false;
+      }
+
+      return true;
+    }
+  }
+</script>
+
+</html>
