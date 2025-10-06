@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Financiamiento Inteligente para PYMEs</title>
+  <link rel="stylesheet" href="src/css/main.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="font-sans antialiased text-gray-600">
+
+  <div id="app" class="min-h-screen flex flex-col">
+    <!-- Top Bar for specific functionality -->
+    <!-- <div class="bg-black text-white py-2 px-4 text-sm border-b border-gray-800">
+      <div class="max-w-screen-2xl mx-auto px-4 sm:px-6">
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-2 text-center">
+          <span class="font-weight">¿Has obtenido NEOTEC? Asegura hoy los fondos para ejecutar tu proyecto con
+            éxito</span>
+          <a href="#neotec-section" class="font-medium underline hover:text-indigo-900 transition-colors">
+            Conoce más →
+          </a>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Navigation Component -->
+    <nav class="full-width-bg bg-white border-b border-gray-200 py-4 sticky top-0 z-50">
+      <div class="section-container flex justify-between items-center max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="flex items-center">
+          <!-- Logo SVG -->
+          <a href="#">
+            <div class="flex items-center">
+              <img src="assets/images/logo.svg" alt="Logo FinanciaPYME" class="h-8">
+            </div>
+          </a>
+          <span class="text-2xl font-bold text-indigo-600"></span>
+        </div>
+
+        <!-- Menú para desktop -->
+        <div class="hidden md:flex space-x-6">
+          <a href="#problem" class="text-gray-500 font-weight px-4 py-2 hover:text-gray-700">Problema</a>
+          <a href="#solution" class="text-gray-500 font-weight px-4 py-2 hover:text-gray-700">Solución</a>
+          <a href="#benefits" class="text-gray-500 font-weight px-4 py-2 hover:text-gray-700">Beneficios</a>
+        </div>
+
+        <div class="flex items-center space-x-2 sm:space-x-4 nav-buttons">
+          <!-- Botón Agendar llamada - más pequeño en móvil -->
+          <button id="heroReserveBtn"
+            class="bg-violet-700 text-white font-medium mx-2 px-2 py-2 md:px-6 md:py-3 rounded-md shadow-md hover:bg-violet-800 hover:shadow-lg transition-all duration-300 ease-in-out text-sm md:text-base">
+            Agendar llamada
+          </button>
+
+          <!-- Botón hamburguesa para móvil -->
+          <button id="mobileMenuBtn" class="md:hidden p-2 text-gray-500 hover:text-gray-700">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Menú móvil -->
+      <div id="mobileMenu" class="md:hidden hidden bg-white border-t border-gray-200">
+        <div class="px-4 py-4 space-y-4">
+          <a href="#problem" class="block text-gray-500 font-weight py-2 hover:text-gray-700">Problema</a>
+          <a href="#solution" class="block text-gray-500 font-weight py-2 hover:text-gray-700">Solución</a>
+          <a href="#benefits" class="block text-gray-500 font-weight py-2 hover:text-gray-700">Beneficios</a>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="bg-white pt-20 text-center">
+      <div class="max-w-5xl mx-auto">
+        <h1 class="text-gray-900 text-5xl md:text-6xl font-medium leading-tight mb-10">
+          Obtén <span class="text-violet-700">financiación para tu empresa</span> fácil y rápido
+        </h1>
+        <p class="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
+          Accede a crédito comparando múltiples entidades en un solo lugar
+        </p>
+
+        <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4 mb-16">
+          <button id="heroSolutionBtn"
+            class="bg-violet-700 text-white font-medium px-6 py-3 rounded-md shadow-md hover:bg-violet-800 hover:shadow-lg transition-all duration-300 ease-in-out">
+            Solicitar financiación
+          </button>
+
+          <button id="discoverMoreBtn"
+            class="bg-transparent text-gray-500 border border-gray-200 font-weight px-6 py-3 rounded-md hover:text-gray-700 hover:border-gray-300 transition-all">
+            Descubre más
+          </button>
+        </div>
+        <div class="mb-12">
+          <p class="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-60 grayscale mt-8">
+          </p>
+          <div class="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-70 grayscale mt-8">
+            <img src="assets/images/BBVA.png" alt="Bank 1" class="h-12">
+            <img src="assets/images/caixa.png" alt="Bank 2" class="h-12">
+            <img src="assets/images/santander.png" alt="Bank 3" class="h-12">
+            <img src="assets/images/sabadell.png" alt="Bank 4" class="h-12">
+          </div>
+        </div>
+      </div>
+
+      <section class="full-width-container bg-indigo-50 py-16">
+        <div class="max-w-7xl mx-auto px-6 flex">
+          <div class="flex w-full px-50">
+            <img src="assets/images/dashboard-header.jpeg">
+          </div>
+      </section>
+
+      <!-- Problem Section (Bento Grid with Gradient + Animations) -->
+      <section id="problem" class="relative py-24 px-6 bg-gradient-to-b from-black via-purple-950 to-black">
+        <div class="max-w-6xl mx-auto">
+          <!-- Title -->
+          <h2 class="text-2xl md:text-4xl font-bold text-purple-100 mb-12 text-center">
+            La financiación bancaria puede ser transparente y sin fricciones
+          </h2>
+
+          <!-- Bento Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-6 gap-6">
+            <!-- Card 1 -->
+            <div class="md:col-span-3 card-animate bg-purple-900/20 border border-purple-600 rounded-xl p-6">
+              <h3 class="text-xl font-semibold text-white mb-3">Convierte el papeleo en una ventaja</h3>
+              <p class="text-gray-300">
+                Centralizamos toda tu documentación en un data room seguro y lo preparamos según la información que pide
+                cada entidad.
+              </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="md:col-span-3 card-animate delay-200 bg-purple-900/20 border border-purple-600 rounded-xl p-6">
+              <h3 class="text-xl font-semibold text-white mb-3">Transparencia en cada paso</h3>
+              <p class="text-gray-300">
+                Gana visibilidad total sobre tiempos de tu solicitud y compara las condiciones de distintas entidades
+                para elegir la que más te conviene.
+              </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div
+              class="md:col-span-4 md:row-span-2 card-animate delay-400 bg-purple-900/20 border border-purple-600 rounded-xl p-6 flex flex-col justify-center">
+              <h3 class="text-xl font-semibold text-white mb-3">Condiciones claras desde el inicio</h3>
+              <p class="text-gray-300">
+                Olvídate de las sorpresas de última hora: accede a tasas y comisiones transparentes que te permiten
+                planear con seguridad el futuro financiero de tu negocio.
+              </p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="md:col-span-2 card-animate delay-600 bg-purple-900/20 border border-purple-600 rounded-xl p-6">
+              <h3 class="text-xl font-semibold text-white mb-3"> Sorpresas al final</h3>
+              <p class="text-gray-300">
+                Tasas, comisiones y cláusulas que terminan golpeando la salud financiera de tu negocio.
+              </p>
+            </div>
+          </div>
+
+          <!-- CTA -->
+          <div class="text-center mt-16 card-animate delay-800">
+            <button id="problemCtaBtn"
+              class="border border-purple-600 text-purple-400 font-medium px-6 py-3 rounded-md hover:bg-purple-600 hover:text-white transition-all">
+              Descubre cómo simplificar tu acceso a crédito
+            </button>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Solution Section -->
+      <section id="solution" class="relative py-24 px-6 bg-gradient-to-b from-indigo-50 via-white to-indigo-100">
+        <div class="max-w-6xl mx-auto">
+          <!-- Title -->
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-16 text-center">
+            Conecta con la financiación que tu negócio necesita
+          </h2>
+
+          <!-- Steps -->
+          <div class="grid md:grid-cols-3 gap-10">
+            <!-- Step 1 -->
+            <div
+              class="card-animate delay-200 bg-white/70 backdrop-blur-md border border-indigo-100 rounded-2xl p-8 shadow-lg hover:shadow-2xl hover:scale-105 transition">
+              <div
+                class="w-16 h-16 rounded-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white flex items-center justify-center text-2xl font-bold mx-auto mb-6 shadow-lg">
+                1
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-4 text-center">
+                Completa una sola solicitud
+              </h3>
+              <p class="text-gray-700 text-center">
+                Una solicitud simple que se comparte con múltiples instituciones financieras.
+              </p>
+            </div>
+
+            <!-- Step 2 -->
+            <div
+              class="card-animate delay-400 bg-white/70 backdrop-blur-md border border-indigo-100 rounded-2xl p-8 shadow-lg hover:shadow-2xl hover:scale-105 transition">
+              <div
+                class="w-16 h-16 rounded-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white flex items-center justify-center text-2xl font-bold mx-auto mb-6 shadow-lg">
+                2
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-4 text-center">
+                Compara ofertas en tiempo real
+              </h3>
+              <p class="text-gray-700 text-center">
+                Recibe y compara múltiples ofertas de financiamiento en una sola plataforma.
+              </p>
+            </div>
+
+            <!-- Step 3 -->
+            <div
+              class="card-animate delay-600 bg-white/70 backdrop-blur-md border border-indigo-100 rounded-2xl p-8 shadow-lg hover:shadow-2xl hover:scale-105 transition">
+              <div
+                class="w-16 h-16 rounded-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white flex items-center justify-center text-2xl font-bold mx-auto mb-6 shadow-lg">
+                3
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-4 text-center">
+                Elige y activa tu financiamiento
+              </h3>
+              <p class="text-gray-700 text-center">
+                Selecciona la mejor opción y activa tu financiamiento en pocos días.
+              </p>
+            </div>
+          </div>
+
+          <button id="solutionCtaBtn"
+            class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-semibold mt-10 px-8 py-4 rounded-md shadow-lg hover:shadow-2xl hover:scale-105 transition">
+            Reserva una llamada y comienza hoy
+          </button>
+        </div>
+      </section>
+
+
+ <!-- Key Benefits Section (fondo más oscuro) -->
+<section id="benefits" class="relative py-24 px-6 overflow-hidden">
+  <!-- Fondo con gradiente más oscuro -->
+  <div class="absolute inset-0 bg-gradient-to-br from-[#0b032d] via-[#1a0b49] to-[#2c1b78]"></div>
+  <!-- Textura opcional -->
+  <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/dark-mosaic.png')] opacity-20"></div>
+
+  <div class="relative max-w-5xl mx-auto text-white">
+    <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
+      ¿Por qué elegirnos?
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-8 mb-16">
+      <div class="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8 shadow-xl hover:shadow-2xl hover:scale-105 transition">
+        <div class="w-12 h-12 bg-gradient-to-r from-violet-500 to-indigo-400 rounded-full flex items-center justify-center text-white mb-6 shadow-md">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-4">Tiempo es poder</h3>
+        <p class="text-gray-300">No pierdas semanas en trámites. Una solicitud que abre la puerta a múltiples bancos y acelera las respuestas.</p>
+      </div>
+
+      <div class="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8 shadow-xl hover:shadow-2xl hover:scale-105 transition">
+        <div class="w-12 h-12 bg-gradient-to-r from-violet-500 to-indigo-400 rounded-full flex items-center justify-center text-white mb-6 shadow-md">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-4">Decisiones con visión estratégica</h3>
+        <p class="text-gray-300">Visualiza tasas, comisiones y plazos con claridad total, luego  compara para elegir.</p>
+      </div>
+
+      <div class="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8 shadow-xl hover:shadow-2xl hover:scale-105 transition">
+        <div class="w-12 h-12 bg-gradient-to-r from-violet-500 to-indigo-400 rounded-full flex items-center justify-center text-white mb-6 shadow-md">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-4">Ve un paso adelante</h3>
+        <p class="text-gray-300">Planifica tu financiación, prevé los vencimientos de tus pólizas y negocia con visión, no con prisa.</p>
+      </div>
+    </div>
+
+    <div class="text-center">
+      <button id="benefitsReserveBtn"
+        class="bg-gradient-to-r from-violet-600 to-indigo-600 text-white font-semibold px-8 py-4 rounded-md shadow-lg hover:shadow-2xl hover:scale-105 transition">
+        Habla con un experto y acelera tu financiamiento
+      </button>
+    </div>
+  </div>
+</section>
+
+
+    <!-- FAQs Section -->
+    <section class="bg-gray-50 py-24 px-6">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
+          Preguntas frecuentes
+        </h2>
+
+        <div class="space-y-4" id="faqsContainer">
+          <!-- Las FAQs se generarán dinámicamente con JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="bg-gradient-to-b from-black via-indigo-950 to-black py-24 px-">
+      <div class="mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+          Facilitamos el acceso a la financiación para tu empresa.
+        </h2>
+        <p class="text-gray-300 text-xl mb-10">
+
+          Nos encargamos de todo el proceso y te exponemos las mejores alternativas para que tú decidas.
+        </p>
+
+        <button id="solutionCtaBtn2"
+          class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-semibold px-8 py-4 rounded-md shadow-lg hover:shadow-2xl hover:scale-105 transition">
+          Reserva una llamada y comienza hoy
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="bg-gradient-to-b from-black via-indigo-950 to-black text-gray-400 py-12 px-6 border-t border-gray-950">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <div class="text-white text-2xl font-semibold mb-4">Lemi Finance</div>
+          <p class="mb-4">Simplificamos el acceso a financiación bancaria para tú empresa.</p>
+        </div>
+
+        <div>
+          <h3 class="text-white font-medium mb-4">Enlaces rápidos</h3>
+          <ul class="space-y-2">
+            <li><a href="#problem" class="hover:text-white">Problema</a></li>
+            <li><a href="#solution" class="hover:text-white">Solución</a></li>
+            <li><a href="#benefits" class="hover:text-white">Beneficios</a></li>
+        </div>
+
+        <div>
+          <h3 class="text-white font-medium mb-4">Legal</h3>
+          <ul class="space-y-2">
+            <li><a href="#" onclick="openModal('termsModal')" class="hover:text-white">Términos de servicio</a></li>
+            <li><a href="#" onclick="openModal('privacyModal')" class="hover:text-white">Política de privacidad</a></li>
+            <li><a href="#" onclick="openModal('cookiesModal')" class="hover:text-white">Cookies</a></li>
+          </ul>
+        </div>
+
+
+        <div>
+          <h3 class="text-white font-medium mb-4">Contacto</h3>
+          <ul class="space-y-2">
+            <li>info@lemi.es</li>
+            <li>+34 617 434 266</li>
+            <li>Comunidad Valenciana, España</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="max-w-7xl mx-auto mt-8 pt-8 border-t border-gray-950 text-center">
+        <p>© 2025 Lemi Finance. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+<!-- 🧾 Modales Legales -->
+<div id="legalModals">
+  <!-- Política de Privacidad -->
+  <div id="privacyModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm hidden items-center justify-center z-50">
+    <div class="bg-white max-w-3xl w-full mx-4 rounded-xl shadow-2xl overflow-hidden">
+      <div class="flex justify-between items-center bg-gradient-to-r from-indigo-700 to-violet-700 text-white px-6 py-4">
+        <h3 class="text-lg font-semibold">Política de Privacidad</h3>
+        <button class="text-white text-2xl leading-none" onclick="closeModal('privacyModal')">&times;</button>
+      </div>
+      <div class="p-6 max-h-[70vh] overflow-y-auto text-gray-700 space-y-4">
+        <p><strong> </strong>POLITICA DE PRIVACIDAD - AVISO LEGAL:  Denominación Social: Lemi Finance S.L.
+                            CIF: B1235778
+                            Domicilio Social: Calle Mestre Sanchis Almiñano 8, 4º piso
+                            Correo electrónico: info@lemi.es
+                            Web: www.lemi.es
+1. Objeto
+1.1. Lemi Finance S.L. (en adelante, el prestador), responsable del sitio web, pone a disposición de los usuarios el presente documento, con el que pretende dar cumplimiento a las obligaciones dispuestas en la Ley 34/2002, de Servicios de la Sociedad de la Información y del Comercio Electrónico (LSSI-CE), así como informar a todos los usuarios del sitio web respecto a las condiciones de uso del mismo.
+ 1.2. Toda persona que acceda a este sitio web y utilice sus servicios, o facilite sus datos, asume el papel de usuario, comprometiéndose a la observancia y cumplimiento riguroso de las disposiciones aquí contenidas, así como a cualesquiera otra disposición legal que fuera de aplicación.
+ 1.3. Las presentes condiciones tendrán un periodo de validez indefinido y serán aplicables hasta la publicación de una nueva versión.
+ 1.4. El prestador se reserva el derecho a modificar cualquier tipo de información que pudiera aparecer en el sitio web, sin que exista obligación de preavisar o poner en conocimiento de los usuarios dichas modificaciones, entendiéndose como suficiente la publicación en el sitio web del prestador.
+ 1.5. Se recomienda la revisión periódica del presente aviso legal.
+ 1.6. El prestador se reserva el derecho a denegar o restringir el uso y/o acceso al sitio web de un usuario, ante el incumplimiento de las presentes condiciones generales, sin derecho a compensación ni indemnización alguna.
+
+2. Identidad de las partes
+2.1. Por una parte, el prestador, identificado más arriba.
+ 2.2. Por otra, el usuario, registrado en el sitio web y que será responsable de la veracidad de los datos personales facilitados al prestador.
+
+3. Obligaciones del usuario
+3.1. El usuario será responsable del tratamiento confidencial y la adecuada custodia de sus contraseñas, evitando el acceso de terceras personas no autorizadas.
+ 3.2. Para la prestación de determinados servicios ofrecidos a través del portal web se solicitan datos al usuario. Este se compromete a que dichos datos sean veraces, completos y precisos, así como a notificar cualquier cambio que pueda afectar a los mismos.
+ 3.3. Ambas partes quedarán obligadas por el contenido de los Términos y Condiciones que en cada caso pudieran aceptarse.
+
+4. Exención de responsabilidad
+(Se mantienen los puntos a) hasta i) como en el texto original, adaptados a Lemi Finance S.L.)
+
+5. Comunicación de incidencias
+En caso de incidencia relacionada con el servicio, ya sea antes o después de la contratación, puede contactar con nosotros en info@lemi.es.
+
+6. Propiedad intelectual e industrial
+(Se mantienen los apartados del 6.1 al 6.5, sustituyendo las menciones de la empresa anterior por Lemi Finance S.L. y el correo de contacto: info@lemi.es).
+
+7. Cláusula de salvaguardia
+(Se mantiene igual que el texto original).
+
+8. Legislación y jurisdicción
+8.1. La ley aplicable en caso de disputa o conflicto de interpretación de los términos de estas Condiciones de Uso, así como cualquier cuestión relacionada con los servicios del Portal, será la ley española.
+ 8.2. Para la resolución de cualquier controversia que pudiera surgir con ocasión del uso del Portal y sus servicios, las partes acuerdan someterse a la jurisdicción de los jueces y tribunales de la ciudad de Barcelona.
+
+POLÍTICA DE PRIVACIDAD
+1. Protección de datos
+1.1. El prestador se encuentra profundamente comprometido con el cumplimiento de la normativa española y europea de protección de datos de carácter personal, en especial el Reglamento (UE) 2016/679 (RGPD) y la Ley Orgánica 3/2018, de 5 de diciembre (LOPDGDD), garantizando la implementación de las medidas de seguridad correspondientes.
+ 1.2. Mediante la marcación de las correspondientes casillas en los formularios de recogida de datos del sitio web, los usuarios aceptan expresamente y de forma libre e inequívoca que sus datos personales sean tratados por parte del prestador para las finalidades indicadas en cada caso.
+ 1.3. Las finalidades principales del tratamiento serán: atender solicitudes de información o contacto, gestionar consultas, prestar servicios de consultoría financiera y estratégica, facilitar la adquisición de archivos programados de índole financiera, así como asistir o vender cursos y manuales relacionados con actividades empresariales y financieras.
+ 1.4. El usuario podrá ejercer sus derechos de acceso, rectificación, supresión, oposición, limitación del tratamiento y portabilidad de los datos, remitiendo una solicitud expresa, junto a copia de su DNI, a la dirección: Calle Mestre Sanchis Almiñano 8, 4º piso, o al correo electrónico: info@lemi.es.
+ 1.5. El prestador no presta directamente servicios de financiación, sino que pone en contacto a solicitantes con posibles financiadores que pudieran ofrecer mejores condiciones. Para estudiar dichas operaciones, los financiadores podrían acceder a la información facilitada por el usuario, lo cual este acepta expresamente al enviar su solicitud. En los servicios de consultoría y formación, la información del usuario se mantendrá confidencial y no será compartida con terceros.
+ 1.6. La solicitud de determinados servicios puede implicar facilitar datos de terceras personas relacionadas con el solicitante (administradores, avalistas, etc.). El solicitante garantiza haber obtenido el consentimiento de dichos terceros antes de facilitar sus datos.
+ 1.7. Si el prestador tuviera conocimiento de la infracción de la obligación anterior, procederá a la eliminación inmediata de la información afectada.
+ 1.8. Los servidores del sitio web podrán detectar automáticamente la dirección IP y el nombre de dominio utilizados por el usuario. Esta información únicamente se usará para posibilitar la prestación del servicio solicitado.
+</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Términos de Servicio -->
+  <div id="termsModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm hidden items-center justify-center z-50">
+    <div class="bg-white max-w-3xl w-full mx-4 rounded-xl shadow-2xl overflow-hidden">
+      <div class="flex justify-between items-center bg-gradient-to-r from-indigo-700 to-violet-700 text-white px-6 py-4">
+        <h3 class="text-lg font-semibold">Términos de Servicio</h3>
+        <button class="text-white text-2xl leading-none" onclick="closeModal('termsModal')">&times;</button>
+      </div>
+      <div class="p-6 max-h-[70vh] overflow-y-auto text-gray-700 space-y-4">
+        <p><strong></strong>Términos y condiciones generales de los usuarios empresas
+Información previa
+Los siguientes Términos y Condiciones Generales detallan el funcionamiento de Lemi Finance S.L. (en adelante, la Plataforma), la forma en que usted puede convertirse en un usuario en calidad de empresa o particular y las condiciones de utilización del sitio web www.lemi.es.
+1.1 Información del sitio web
+En cumplimiento de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico, se informa que el titular del sitio web www.lemi.es es Lemi Finance S.L., sociedad de nacionalidad española, con CIF B1235778 y domicilio en Calle Mestre Sanchis Almiñano 8, 4º piso.
+ Contacto: info@lemi.es
+1.2 Aceptación de condiciones
+Si usted decide convertirse en usuario de Lemi Finance, debe leer detenidamente, aceptar y cumplir estos Términos y Condiciones Generales (en adelante, los “Términos y Condiciones”), así como nuestra Política de Privacidad (disponible en la sección "Aviso Legal" de la Plataforma). Mediante el uso de la Plataforma y los servicios prestados a través de la misma, usted confirma que ha leído, entendido y acepta estos Términos y Condiciones.
+1.3 Definiciones
+Las referencias en estos Términos y Condiciones a "nosotros", "nos" y "nuestro" se refieren a Lemi Finance S.L.. Las referencias a "usted" y "su" se refieren a un usuario empresa o particular (en adelante, el Usuario) de la Plataforma.
+1.4 Representación legal
+En caso de actuar en nombre de una persona jurídica, usted declara que está debidamente autorizado para representarla, con capacidad suficiente para aceptar estos Términos y Condiciones y utilizar los servicios de la Plataforma.
+
+2. Funciones de la plataforma
+2.1. La Plataforma no es una entidad de crédito, ni un establecimiento financiero, ni concede financiación directa. Su función principal es intermediar entre, por una parte, entidades financieras o empresas dedicadas a la financiación, y, por otra, usuarios interesados en obtener servicios financieros, de consultoría o de formación.
+2.2. El usuario entiende y acepta que Lemi Finance S.L. no garantiza la capacidad, solvencia o legitimidad de las entidades de financiación con las que se pueda poner en contacto a través de la Plataforma.
+2.3. La Plataforma podrá proporcionar a las Entidades informes de evaluación crediticia elaborados por sí misma o por terceros especializados.
+2.4. El usuario acepta expresamente que, en el caso de operaciones de financiación, la información facilitada pueda ser difundida a través de la Plataforma para los fines descritos.
+2.5. Para los servicios de consultoría, archivos financieros o cursos, la información facilitada por el usuario no será compartida con terceros y será tratada conforme a la normativa española de protección de datos.
+
+3. Ámbito de aplicación y alta de usuario
+Estos Términos y Condiciones rigen todos los servicios de la Plataforma.
+
+
+Para ser usuario, debe:
+
+
+Ser persona física o jurídica.
+
+
+Proporcionar datos de contacto correctos.
+
+
+Aceptar expresamente los presentes Términos y Condiciones.
+
+
+
+4. Procesos de servicios
+Descarga de archivos y cursos: el usuario se registra y recibirá el material en el correo electrónico facilitado.
+
+
+Consultoría: tras registrarse y realizar el pago, un consultor especializado contactará con el usuario.
+
+
+Financiación: la Plataforma podrá publicar operaciones de financiación junto con la documentación necesaria para que las Entidades hagan ofertas.
+
+
+
+5. Tarifas y comisiones
+Los servicios de intermediación financiera pueden implicar costes fijos y/o variables, que serán informados previamente al usuario.
+
+
+Los servicios de consultoría, archivos financieros y cursos tienen precios fijos visibles en la Plataforma.
+
+
+
+6. Desistimiento y baja
+El usuario puede desistir del contrato en un plazo de 7 días naturales desde el alta.
+
+
+El usuario puede solicitar la baja en cualquier momento con un preaviso de 2 días hábiles.
+
+
+La Plataforma puede dar de baja a un usuario en caso de incumplimiento, fraude o uso indebido.
+
+
+
+7. Exoneración de responsabilidad
+La Plataforma no garantiza la obtención de financiación ni la exactitud de los cálculos publicados.
+
+
+No se hace responsable de errores de terceros, fallos técnicos o interrupciones del servicio por causas de fuerza mayor.
+
+
+El uso de la Plataforma es bajo responsabilidad exclusiva del usuario.
+
+
+
+8. Propiedad intelectual
+Todo el contenido de la Plataforma es propiedad de Lemi Finance S.L. o cuenta con autorización para su uso.
+
+
+El usuario no podrá copiar, reproducir, modificar ni distribuir el contenido sin autorización expresa.
+
+
+Los datos subidos por el usuario seguirán siendo de su propiedad, pero autoriza a la Plataforma a utilizarlos en el marco de los servicios ofrecidos.
+
+
+
+9. Política de Privacidad
+Lemi Finance S.L. cumple con la LOPD y el RGPD, garantizando la confidencialidad y seguridad de los datos.
+
+
+El usuario puede ejercer sus derechos de acceso, rectificación, cancelación y oposición enviando una solicitud a info@lemi.es, junto con copia de su DNI.
+
+
+Para operaciones de financiación, los datos pueden compartirse con financiadores.
+
+
+En los demás servicios, los datos nunca se compartirán con terceros.
+
+
+
+10. Legislación y jurisdicción
+Los presentes Términos y Condiciones se rigen por la ley española.
+
+
+Para la resolución de conflictos, las partes se someten a los juzgados y tribunales de Valencia, salvo disposición legal imperativa en contrario.
+
+
+
+
+
+Términos y condiciones de los usuarios de entidades de financiación
+1. Información previa
+Los siguientes Términos y Condiciones Generales detallan el funcionamiento de Lemi, la forma en que usted puede convertirse en un usuario de la Plataforma en calidad de Usuario perteneciente a una Entidad de Financiación y las condiciones de utilización del sitio web www.lemi.es.
+1.1. Información del sitio web
+En cumplimiento de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico, se informa que el titular del sitio web www.lemi.es (en adelante, la Plataforma) es Lemi Finance S.L., sociedad de nacionalidad española, con CIF B1235778 y domicilio en Calle Mestre Sanchis Almiñano 8, 4º piso.
+ Contacto: info@lemi.es
+1.2. Aceptación de condiciones
+Si usted decide convertirse en un usuario de Lemi, debe leer detenidamente, aceptar y cumplir estos Términos y Condiciones Generales (en adelante, los “Términos y Condiciones”), así como nuestra Política de Privacidad (disponible en la sección "Aviso Legal" de la Plataforma). Mediante el uso de la Plataforma y los servicios prestados a través de la misma, usted confirma que ha leído, entendido y está de acuerdo con estos Términos y Condiciones.
+1.3. Definiciones
+Las referencias en estos Términos y Condiciones a "nosotros", "nos" y "nuestro" se refieren a Lemi Finance S.L.. Las referencias a "usted" y "su" se refieren a un Usuario perteneciente a una Entidad de Financiación (en adelante, el Usuario).
+1.4. Representación legal
+En caso de actuar en nombre de una persona jurídica, usted declara que está debidamente autorizado para actuar en representación de la misma y que tiene capacidad suficiente para aceptar estos Términos y Condiciones.
+
+2. Funciones de Lemi
+2.1. Lemi no es una entidad de crédito ni un establecimiento financiero de crédito, ni concede financiación directa. Su función principal es administrativa y tecnológica, facilitando la formalización de operaciones de financiación entre Usuarios (entidades de financiación) y Empresas.
+2.2. El Usuario entiende y acepta que Lemi no garantiza la capacidad, solvencia ni legitimidad de las Empresas y que en ningún caso se hace responsable de impagos. Las ofertas de financiación se realizan bajo el propio riesgo del Usuario.
+2.3. Lemi puede proporcionar análisis de riesgo crediticio basados en informes propios o de terceros especializados. Estos informes tienen carácter meramente informativo y no constituyen asesoramiento financiero.
+2.4. Lemi no se hace responsable de la información difundida en la Plataforma acerca de las Empresas, incluida la relativa a su riesgo crediticio.
+
+3. Proceso de alta como Usuario
+3.1. Ámbito de aplicación
+ Estos Términos y Condiciones rigen la contratación de los servicios de la Plataforma. Para darse de alta, el Usuario debe completar el Formulario de Registro.
+3.2. Requisitos para ser Usuario
+Ser persona física mayor de 18 años con capacidad legal para contratar y residencia permanente en España.
+
+
+Registrar sus datos en la Plataforma.
+
+
+Tener la consideración de profesional activo en una Entidad de Financiación regulada en España.
+
+
+3.3. Registro y verificación de identidad
+ Durante el registro se solicitarán datos identificativos y de contacto. Lemi podrá requerir documentación adicional para verificar la identidad del Usuario y decidir discrecionalmente su aceptación en la Plataforma.
+3.4. Acceso a la cuenta
+ El acceso se realiza mediante usuario y contraseña, personales e intransferibles. El Usuario es responsable de su custodia y del uso que se haga de ellos.
+3.5. Uso adecuado de la Plataforma
+ El Usuario no podrá eludir los sistemas de seguridad ni utilizar la Plataforma con fines ilícitos, fraudulentos o no autorizados.
+
+4. Proceso de intermediación
+El Usuario accede al Marketplace y descarga la documentación e informes de las Empresas que le interesen.
+
+
+Si requiere más información o contacto con la Empresa, deberá solicitarlo exclusivamente a través de info@lemi.es, nunca directamente.
+
+
+El Usuario comunicará a Lemi las condiciones económicas de la financiación aprobada.
+
+
+La Empresa seleccionará las ofertas que considere oportunas y, en caso de aceptación, Lemi facilitará los datos de contacto entre ambas partes.
+
+
+El Usuario queda obligado a informar a Lemi de la formalización de la operación.
+
+
+
+5. Desistimiento y baja
+El Usuario dispone de 7 días naturales desde el alta para desistir del contrato.
+
+
+Puede solicitar la baja en cualquier momento con un preaviso mínimo de 2 días hábiles.
+
+
+Lemi podrá dar de baja al Usuario en caso de incumplimiento, fraude, uso indebido o por causas legales.
+
+
+
+6. Exoneración de responsabilidad
+Los cálculos y herramientas de la Plataforma son orientativos, sin garantías.
+
+
+Lemi no asesora ni recomienda operaciones de financiación. Cada Usuario debe aplicar sus propios sistemas de análisis.
+
+
+No se garantiza la exactitud, actualización ni ausencia de errores en los datos mostrados.
+
+
+Lemi no asegura la disponibilidad continua de la Plataforma, pudiendo suspender el servicio por causas de mantenimiento, fuerza mayor o fallos técnicos.
+
+
+El uso de la Plataforma es bajo responsabilidad exclusiva del Usuario.
+
+
+
+7. Propiedad intelectual y confidencialidad
+Todo el contenido de la Plataforma es propiedad de Lemi Finance S.L. o de sus licenciantes.
+
+
+El Usuario no podrá copiar, reproducir ni distribuir contenido sin autorización expresa.
+
+
+El Usuario se compromete a no contactar con Empresas de la Plataforma para operaciones análogas fuera de ella durante la vigencia del contrato y hasta un (1) año después de su baja.
+
+
+Los datos subidos por el Usuario seguirán siendo de su propiedad, otorgando a Lemi licencia de uso limitada para el funcionamiento de la Plataforma.
+
+
+
+8. Protección de datos
+Lemi cumple con la LOPDGDD y el RGPD, garantizando la confidencialidad y seguridad de los datos.
+
+
+El Usuario, al registrarse, acepta expresamente el tratamiento de sus datos para la prestación de servicios, comunicaciones y mantenimiento de la relación contractual.
+
+
+Puede ejercer sus derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad enviando una solicitud con copia de su DNI a info@lemi.es.
+
+
+
+9. Servicio de atención al cliente
+Para cualquier duda o consulta sobre estos Términos y Condiciones puede contactar en:  info@lemi.es
+
+10. Modificaciones
+Lemi podrá actualizar o modificar estos Términos y Condiciones para adaptarlos a la normativa vigente o a cambios en el negocio. Dichas modificaciones se comunicarán a los Usuarios por correo electrónico y se publicarán en la Plataforma.
+
+11. Legislación aplicable y jurisdicción
+Estos Términos y Condiciones se rigen por la ley española.
+ Las partes se someten a los juzgados y tribunales de Valencia, salvo disposición legal imperativa en contrario.
+</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Política de Cookies -->
+  <div id="cookiesModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm hidden items-center justify-center z-50">
+    <div class="bg-white max-w-3xl w-full mx-4 rounded-xl shadow-2xl overflow-hidden">
+      <div class="flex justify-between items-center bg-gradient-to-r from-indigo-700 to-violet-700 text-white px-6 py-4">
+        <h3 class="text-lg font-semibold">Política de Cookies</h3>
+        <button class="text-white text-2xl leading-none" onclick="closeModal('cookiesModal')">&times;</button>
+      </div>
+      <div class="p-6 max-h-[70vh] overflow-y-auto text-gray-700 space-y-4">
+        <p><strong></strong> 1. ¿Qué son las cookies?
+Las cookies son archivos que se descargan en su dispositivo al acceder a determinadas páginas web. Permiten, entre otras cosas, almacenar y recuperar información sobre los hábitos de navegación de un usuario o de su equipo, y dependiendo de la información que contengan y de cómo utilice su equipo, pueden usarse para reconocer al usuario.
+El navegador del usuario almacena cookies en el disco duro únicamente durante la sesión actual, ocupando un espacio mínimo y sin perjudicar al ordenador. La mayoría se borran automáticamente al finalizar la sesión (cookies de sesión).
+Las cookies no contienen información personal específica y la mayoría de navegadores aceptan cookies por defecto, aunque permiten configurarlas para impedir o eliminar su uso.
+Sin su expreso consentimiento —activando las cookies en su navegador— www.lemi.es no vinculará en las cookies los datos personales proporcionados en el momento del registro o la compra.
+
+2. Tipos de cookies utilizadas en este sitio web
+Cookies técnicas: permiten la navegación y el uso de las diferentes opciones o servicios del sitio (controlar el tráfico, identificar sesiones, acceder a zonas restringidas, recordar elementos de un pedido, completar procesos de compra, usar elementos de seguridad, compartir contenidos en redes sociales, etc.).
+
+
+Cookies de personalización: permiten acceder al servicio con características predefinidas en función de criterios como el idioma, tipo de navegador o configuración regional.
+
+
+Cookies de análisis: tratadas por nosotros o por terceros, permiten cuantificar el número de usuarios y analizar su uso del sitio, con el fin de mejorar la oferta de productos y servicios.
+
+
+Cookies publicitarias: gestionan de la forma más eficaz posible los espacios publicitarios del sitio, adecuando el contenido del anuncio al servicio solicitado o al uso del sitio web.
+
+
+Cookies de publicidad comportamental: almacenan información del comportamiento de los usuarios obtenida a través de la observación continuada de sus hábitos de navegación, lo que permite mostrar publicidad en función de un perfil específico.
+
+
+
+3. Cookies de terceros
+Este sitio web puede utilizar servicios de terceros que recopilan información con fines estadísticos, de uso del sitio web por parte del usuario y para la prestación de otros servicios relacionados.
+En particular, este sitio utiliza:
+Google Analytics: analiza cómo los visitantes usan el sitio web. La información recopilada (de forma anónima) se emplea para elaborar informes y mejorar la experiencia del usuario.
+
+
+YouTube: contabiliza el número de visualizaciones de los vídeos incrustados en la web.
+
+
+AddThis: permite a los usuarios compartir fácilmente el contenido en redes sociales. Sus cookies recopilan información sobre cómo se comparte contenido y ayudan a evitar tareas repetidas en un periodo de tiempo.
+
+
+Otras cookies de personalización: permiten al usuario definir idioma, configuración regional o navegador.
+
+
+Plataformas vinculadas: AddThis, Facebook, Twitter, Google, YouTube.
+
+4. Aceptación, rechazo y eliminación de cookies
+El usuario acepta expresamente, mediante el uso de este sitio, el tratamiento de la información recabada en la forma y con los fines mencionados.
+El usuario reconoce asimismo conocer la posibilidad de rechazar el uso de cookies mediante la configuración de su navegador, aunque ello podría impedir el uso pleno de todas las funcionalidades del sitio.
+Puede permitir, bloquear o eliminar las cookies instaladas en su equipo a través de las opciones de configuración de su navegador:
+Chrome
+
+
+Internet Explorer / Edge
+
+
+Firefox
+
+
+Safari
+
+
+
+5. Contacto
+Si tiene dudas sobre esta Política de Cookies, puede ponerse en contacto con nosotros en:
+  info@lemi.es
+
+</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 🍪 Banner de Cookies conforme a normativa 2025 -->
+<div id="cookieBanner" class="fixed bottom-4 left-1/2 -translate-x-1/2 bg-white/95 border border-gray-200 shadow-2xl rounded-2xl p-6 w-[90%] max-w-lg z-50 flex flex-col gap-4 sm:gap-2 sm:flex-row sm:items-center animate-fade-in">
+  <div class="text-gray-700 text-sm flex-1  leading-relaxed">
+    Utilizamos <strong>cookies propias y de terceros</strong> con fines técnicos, analíticos y de personalización.  
+    Puedes aceptar todas, rechazarlas o <button onclick="openModal('cookiesModal')" class="text-indigo-600 underline hover:text-indigo-800 font-medium">configurar tus preferencias</button>.  
+    Para más información, consulta nuestra <a href="#" onclick="openModal('cookiesModal')" class="text-indigo-600 underline hover:text-indigo-800 font-medium">Política de Cookies</a>.
+  </div>
+
+  <div class="flex gap-2 sm:flex-col sm:gap-2">
+    <button id="rejectCookiesBtn" class="px-4 py-2 text-sm font-medium rounded-md border border-gray-300 text-gray-700 hover:bg-gray-100 transition">
+      Rechazar
+    </button>
+    <button id="acceptCookiesBtn" class="px-4 py-2 text-sm font-medium rounded-md bg-indigo-600 text-white hover:bg-indigo-700 transition">
+      Aceptar
+    </button>
+  </div>
+</div>
+
+
+    <!-- Modal -->
+    <div id="modal" class="fixed inset-0 z-50 overflow-y-auto hidden">
+      <div class="modal-overlay fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm" id="modalOverlay"></div>
+
+      <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+        <div
+          class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-2xl">
+          <div class="bg-white px-6 py-4 border-b border-gray-200 flex justify-between items-center">
+            <h3 class="text-lg font-semibold text-gray-900">Agenda una llamada</h3>
+            <button id="closeModalBtn" class="text-gray-400 hover:text-gray-600 text-2xl">&times;</button>
+          </div>
+
+          <div class="bg-white px-6 py-10">
+            <p class="text-gray-600 mb-6">Completa el formulario y un especialista se pondrá en contacto contigo en
+              menos de 24 horas.</p>
+
+            <form class="space-y-4" id="reservationForm">
+              <div>
+                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nombre completo</label>
+                <input type="text" id="name"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+                  required>
+              </div>
+
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                <input type="email" id="email"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+                  required>
+              </div>
+
+              <div>
+                <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Teléfono</label>
+                <input type="tel" id="phone"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+                  required>
+              </div>
+
+              <div>
+                <label for="company" class="block text-sm font-medium text-gray-700 mb-1">Empresa</label>
+                <input type="text" id="company"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+                  required>
+              </div>
+
+              <div>
+                <label for="cif" class="block text-sm font-medium text-gray-700 mb-1">CIF/NIF</label>
+                <input type="text" id="cif"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+                  placeholder="Ej: A12345678" required maxlength="9">
+                <p class="text-xs text-gray-500 mt-1">Formato: Letra + 8 números (CIF) o 8 números + letra (NIF)</p>
+              </div>
+
+              <div>
+                <label for="message" class="block text-sm font-medium text-gray-700 mb-1">¿En qué podemos
+                  ayudarte?</label>
+                <textarea id="message" rows="3"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+              </div>
+
+              <div class="pt-4">
+                <button type="submit"
+                  class="w-full bg-indigo-600 text-white font-semibold px-4 py-3 rounded-md hover:bg-indigo-700 transition-all">
+                  Reservar llamada gratuita
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Botón flotante de WhatsApp -->
+  <a href="https://wa.me/34617434266?text=Hola,%20me%20interesa%20saber%20más%20sobre%20la%20financiación%20para%20mi%20empresa"
+    class="whatsapp-float" target="_blank" id="whatsappFloatBtn">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</body>
+
+<script>
+
+  // Main JavaScript for lemi landing v2
+
+  document.addEventListener('DOMContentLoaded', function () {
+    // Modal functionality
+    const modal = document.getElementById('modal');
+    const modalOverlay = document.getElementById('modalOverlay');
+    const closeModalBtn = document.getElementById('closeModalBtn');
+    const reserveCallBtn = document.getElementById('reserveCallBtn');
+    const heroReserveBtn = document.getElementById('heroReserveBtn');
+    const solutionReserveBtn = document.getElementById('solutionReserveBtn');
+    const benefitsReserveBtn = document.getElementById('benefitsReserveBtn');
+    const testimonialsReserveBtn = document.getElementById('testimonialsReserveBtn');
+    const finalCtaBtn = document.getElementById('finalCtaBtn');
+    const reservationForm = document.getElementById('reservationForm');
+    const discoverMoreBtn = document.getElementById('discoverMoreBtn');
+    const problemCtaBtn = document.getElementById('problemCtaBtn');
+    const solutionCtaBtn = document.getElementById('solutionCtaBtn');
+    const solutionCtaBtn2 = document.getElementById('solutionCtaBtn2');
+    const heroSolutionBtn = document.getElementById('heroSolutionBtn');
+
+    // Open modal function
+    function openModal() {
+      modal.classList.remove('hidden');
+      setTimeout(() => {
+        modalOverlay.classList.add('active');
+      }, 10);
+      document.body.style.overflow = 'hidden';
+    }
+
+    // Close modal function
+    function closeModal() {
+      modalOverlay.classList.remove('active');
+      setTimeout(() => {
+        modal.classList.add('hidden');
+      }, 300);
+      document.body.style.overflow = 'auto';
+    }
+
+    // Event listeners for opening modal
+    if (reserveCallBtn) reserveCallBtn.addEventListener('click', openModal);
+    if (heroReserveBtn) heroReserveBtn.addEventListener('click', openModal);
+    if (solutionReserveBtn) solutionReserveBtn.addEventListener('click', openModal);
+    if (benefitsReserveBtn) benefitsReserveBtn.addEventListener('click', openModal);
+    if (testimonialsReserveBtn) testimonialsReserveBtn.addEventListener('click', openModal);
+    if (finalCtaBtn) finalCtaBtn.addEventListener('click', openModal);
+    if (discoverMoreBtn) discoverMoreBtn.addEventListener('click', openModal);
+    if (problemCtaBtn) problemCtaBtn.addEventListener('click', openModal);
+    if (solutionCtaBtn) solutionCtaBtn.addEventListener('click', openModal);
+    if (solutionCtaBtn2) solutionCtaBtn2.addEventListener('click', openModal);
+    if (heroSolutionBtn) heroSolutionBtn.addEventListener('click', openModal);
+
+    // Event listeners for closing modal
+    if (closeModalBtn) closeModalBtn.addEventListener('click', closeModal);
+    if (modalOverlay) modalOverlay.addEventListener('click', closeModal);
+
+    // Form submission - Envío por WhatsApp
+    if (reservationForm) {
+      reservationForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        // Get form data
+        const formData = {
+          name: document.getElementById('name').value,
+          email: document.getElementById('email').value,
+          phone: document.getElementById('phone').value,
+          company: document.getElementById('company').value,
+          message: document.getElementById('message').value
+        };
+
+        // Crear mensaje para WhatsApp
+        const whatsappMessage = `
+            ¡Hola! Me interesa la financiación para mi empresa:
+
+            *Nombre:* ${formData.name}
+            *Email:* ${formData.email}
+            *Teléfono:* ${formData.phone}
+            *Empresa:* ${formData.company}
+            *Mensaje:* ${formData.message || 'Sin mensaje adicional'}
+
+            Por favor, contáctenme para agendar una llamada.`;
+
+        // Codificar el mensaje para URL
+        const encodedMessage = encodeURIComponent(whatsappMessage);
+
+        // Número de WhatsApp (reemplaza con tu número)
+        const phoneNumber = '34617434266'; // Formato internacional sin +
+
+        // Crear URL de WhatsApp
+        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+        // Abrir WhatsApp
+        window.open(whatsappUrl, '_blank');
+
+        // Mostrar mensaje de confirmación
+        alert('¡Redirigiendo a WhatsApp! Un especialista se pondrá en contacto contigo.');
+
+        // Close modal and reset form
+        closeModal();
+        reservationForm.reset();
+      });
+    }
+    // WhatsApp float button functionality
+    const whatsappFloatBtn = document.getElementById('whatsappFloatBtn');
+
+    if (whatsappFloatBtn) {
+      // Puedes agregar funcionalidad adicional aquí si es necesario
+      console.log('Botón de WhatsApp listo');
+    }
+    // FAQ functionality
+    const faqs = [
+      {
+        question: "¿Qué es Lemi Finance y cómo puede ayudar a mi empresa?",
+        answer: "Lemi Finance es una plataforma tecnológica que simplifica el acceso a financiación para pequeñas y medianas empresas (PYMEs). Reunimos en un solo lugar todas las opciones del sistema financiero tradicional y no tradicional, permitiéndote presentar tu documentación una sola vez y enviar solicitudes a múltiples entidades. Nuestro objetivo es ahorrar tiempo, eliminar gestiones presenciales y ofrecerte total transparencia: podrás comparar condiciones, plazos, tasas e importes para elegir la opción que mejor se adapte a las necesidades de tu negocio."
+      },
+      {
+        question: "¿Cómo funciona el proceso de financiación?",
+        answer: "Primero, regístrate en nuestra plataforma creando tu usuario y completa el perfil de tu empresa. Te guiaremos paso a paso para subir la información legal, fiscal y financiera necesaria para la evaluación crediticia. Una vez validado tu perfil, podrás enviar solicitudes de financiación a diversas entidades desde el mismo panel. Los financiadores analizarán tu solicitud y te presentarán sus condiciones. Desde Lemi Finance podrás comparar todas las ofertas y seleccionar la más conveniente para tu empresa."
+      },
+      
+      {
+        question: "¿Qué tipos de financiación trabajan?",
+        answer: "Trabajamos con todas las fuentes reguladas disponibles en el mercado: bancos, crowdlending, direct lending, financiación privada, fondos de inversión, compañías aseguradoras y financiación pública. Ofrecemos una amplia gama de productos, como préstamos, pólizas de crédito, confirming, factoring, descuento comercial, avales y financiación para inversión o circulante. Adaptamos cada solución al perfil y necesidades de tu empresa."
+      },
+      {
+        question: "¿Lemi actúa como financiador directo a las empresas?",
+        answer: "No. Lemi actúa como intermediario entre tu empresa y las entidades financieras, facilitando el acceso a todas las fuentes de financiación disponibles. Nuestro papel es optimizar el proceso, generar competencia entre las entidades y conseguir las mejores condiciones para ti."
+      },
+      {
+        question: "¿Cómo garantizan la seguridad de mis datos financieros?",
+        answer: "La seguridad de tus datos es nuestra máxima prioridad. Utilizamos encriptación de grado bancario, cumplimos con todas las regulaciones de protección de datos (GDPR, LOPD) y nunca compartimos tu información sin tu consentimiento explícito. Puedes consultar nuestra política de privacidad para más detalles."
+      }
+    ];
+
+    const faqsContainer = document.getElementById('faqsContainer');
+
+    if (faqsContainer) {
+      faqs.forEach((faq, index) => {
+        const faqElement = document.createElement('div');
+        faqElement.className = 'faq-item';
+        faqElement.innerHTML = `
+                <div class="faq-question" id="faq-question-${index}">
+                    <span>${faq.question}</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                </div>
+                <div class="faq-answer" id="faq-answer-${index}">
+                    <p class="pb-6 text-gray-600">${faq.answer}</p>
+                </div>
+            `;
+
+        faqsContainer.appendChild(faqElement);
+
+        // Add click event to toggle FAQ answer
+        const questionEl = document.getElementById(`faq-question-${index}`);
+        const answerEl = document.getElementById(`faq-answer-${index}`);
+
+        questionEl.addEventListener('click', () => {
+          answerEl.classList.toggle('active');
+
+          // Rotate icon
+          const icon = questionEl.querySelector('svg');
+          icon.classList.toggle('transform');
+          icon.classList.toggle('rotate-180');
+        });
+      });
+    }
+
+    // Navigation scroll effect
+    const nav = document.querySelector('nav');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          const navHeight = nav.offsetHeight;
+          const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navHeight;
+
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+
+    // Animation on scroll
+    function initAnimations() {
+      const animatedElements = document.querySelectorAll('.card-hover, .progress-bar');
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-fade-in');
+          }
+        });
+      }, {
+        threshold: 0.1
+      });
+
+      animatedElements.forEach(el => {
+        observer.observe(el);
+      });
+    }
+
+    initAnimations();
+    });
+
+      // === Sistema Legal (Modales + Cookies) ===
+    // Funciones modales para secciones legales
+    window.openModal = function (id) {
+      const modal = document.getElementById(id);
+      if (modal) {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+      }
+    };
+
+    window.closeModal = function (id) {
+      const modal = document.getElementById(id);
+      if (modal) {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      }
+    };
+
+// === Sistema Legal: Cookies conforme normativa 2025 ===
+const cookieBanner = document.getElementById('cookieBanner');
+const acceptBtn = document.getElementById('acceptCookiesBtn');
+const rejectBtn = document.getElementById('rejectCookiesBtn');
+
+if (cookieBanner && acceptBtn && rejectBtn) {
+  // Ver si el usuario ya tomó una decisión
+  const cookieConsent = localStorage.getItem('cookieConsent');
+
+  if (!cookieConsent) {
+    cookieBanner.classList.remove('hidden');
+  } else {
+    cookieBanner.remove();
+  }
+
+  // Aceptar todas las cookies
+  acceptBtn.addEventListener('click', () => {
+    localStorage.setItem('cookieConsent', 'accepted');
+    cookieBanner.remove();
+    enableAnalyticsCookies(); // activa scripts analíticos o de terceros
+  });
+
+  // Rechazar todas las cookies
+  rejectBtn.addEventListener('click', () => {
+    localStorage.setItem('cookieConsent', 'rejected');
+    cookieBanner.remove();
+    disableAnalyticsCookies();
+  });
+}
+
+     // 🔚 CIERRA EL DOMContentLoaded
+
+  // Mobile menu functionality
+  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  if (mobileMenuBtn && mobileMenu) {
+    mobileMenuBtn.addEventListener('click', function () {
+      mobileMenu.classList.toggle('hidden');
+      mobileMenu.classList.toggle('open');
+
+      // Cambiar icono del botón
+      const icon = mobileMenuBtn.querySelector('svg');
+      if (mobileMenu.classList.contains('hidden')) {
+        icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>';
+      } else {
+        icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>';
+      }
+    });
+
+    // Cerrar menú al hacer clic en un enlace
+    const mobileLinks = mobileMenu.querySelectorAll('a');
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', function () {
+        mobileMenu.classList.add('hidden');
+        mobileMenu.classList.remove('open');
+        mobileMenuBtn.querySelector('svg').innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>';
+      });
+    });
+    // CIF/NIF validation function
+    function validateCIF(cif) {
+      // Eliminar espacios y convertir a mayúsculas
+      cif = cif.trim().toUpperCase();
+
+      // Patrón para CIF (Letra + 7 u 8 números)
+      const cifPattern = /^[ABCDEFGHJNPQRSUVW]{1}\d{7}[\dJ]$/;
+
+      // Patrón para NIF (8 números + Letra)
+      const nifPattern = /^\d{8}[TRWAGMYFPDXBNJZSQVHLCKET]$/;
+
+      // Validar formato
+      if (!cifPattern.test(cif) && !nifPattern.test(cif)) {
+        return false;
+      }
+
+      return true;
+    }
+  }
+</script>
+
+</html>
