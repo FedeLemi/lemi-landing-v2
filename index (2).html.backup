@@ -1,0 +1,1368 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Financiación inteligente para tu empresa</title>
+  <meta name="description"
+    content="Compara bancos y accede a la mejor financiación para tu pyme con Lemi Finance. Solicita crédito, venture debt, factoring y más con un solo formulario.">
+  <meta name="keywords"
+    content="financiación pymes, crédito empresarial, venture debt, factoring, préstamos bancarios, financiación rápida">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.lemi.es/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Lemi Finance | Financiación inteligente para tu empresa">
+  <meta property="og:description"
+    content="Centraliza tu documentación, compara condiciones bancarias y activa la financiación perfecta para tu negocio en pocos días.">
+  <meta property="og:image" content="https://www.lemi.es/assets/images/dashboard-header.jpeg">
+  <meta property="og:url" content="https://www.lemi.es/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Lemi Finance | Financiación inteligente para tu empresa">
+  <meta name="twitter:description"
+    content="Solicita una sola vez, compara ofertas en tiempo real y consigue liquidez sin fricciones con Lemi Finance.">
+  <meta name="twitter:image" content="https://www.lemi.es/assets/images/dashboard-header.jpeg">
+  <link rel="stylesheet" href="src/css/main.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Lemi Finance",
+      "url": "https://www.lemi.es/",
+      "logo": "https://www.lemi.es/assets/images/logo.svg",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "telephone": "+34 617 434 266",
+        "areaServed": "ES",
+        "availableLanguage": ["es", "en"]
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/lemi-finance/",
+        "https://twitter.com/lemi_finance"
+      ]
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Lemi Finance",
+      "image": "https://www.lemi.es/assets/images/dashboard-header.jpeg",
+      "url": "https://www.lemi.es/",
+      "telephone": "+34 617 434 266",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Calle Mestre Sanchis Almiñano 8, 4º piso",
+        "addressLocality": "Valencia",
+        "postalCode": "46008",
+        "addressCountry": "ES"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 39.4702,
+        "longitude": -0.3768
+      },
+      "areaServed": "ES",
+      "sameAs": [
+        "https://www.linkedin.com/company/lemi-finance/",
+        "https://twitter.com/lemi_finance"
+      ]
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Qué documentación necesito para iniciar la solicitud?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Con un único checklist digital subes CIF o NIF, escrituras vigentes, última memoria financiera y extractos bancarios. Nuestro equipo valida todo antes de enviarlo a las entidades."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto tarda Lemi Finance en conseguir una respuesta?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tras compartir la solicitud, recibimos pre-respuestas en 24-72 horas hábiles y acompañamos las negociaciones hasta la formalización."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Trabajan con empresas en toda España?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí, atendemos pymes y scaleups en cualquier comunidad autónoma y conectamos con bancos nacionales y financiadores regionales."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Puedo combinar financiación bancaria y alternativa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Diseñamos estructuras híbridas que combinan préstamos bancarios, venture debt y líneas de circulante para optimizar tu coste de capital."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Tiene algún coste anticipado usar Lemi Finance?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No cobramos por registrarte ni por presentar tu caso. Solo abonamos honorarios cuando aceptas una financiación cerrada a través de la plataforma."
+          }
+        }
+      ]
+    }
+  </script>
+</head>
+
+<body class="font-sans antialiased text-gray-600">
+
+  <div id="app" class="min-h-screen flex flex-col">
+    <!-- Top Bar for specific functionality -->
+    <!-- <div class="bg-black text-white py-2 px-4 text-sm border-b border-gray-800">
+      <div class="max-w-screen-2xl mx-auto px-4 sm:px-6">
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-2 text-center">
+          <span class="font-weight">¿Has obtenido NEOTEC? Asegura hoy los fondos para ejecutar tu proyecto con
+            éxito</span>
+          <a href="#neotec-section" class="font-medium underline hover:text-indigo-900 transition-colors">
+            Conoce más →
+          </a>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Navigation Component -->
+    <nav class="sticky top-0 z-50 px-4 sm:px-6 py-4">
+      <div class="nav-glass max-w-7xl mx-auto flex justify-between items-center">
+        <div class="flex items-center gap-3">
+          <!-- Logo SVG -->
+          <a href="#" class="flex items-center gap-2">
+            <img src="assets/images/logo.svg" alt="Logo Lemi Finance" class="h-8 w-auto">
+          </a>
+          <span class="hidden sm:inline-flex text-lg font-semibold text-gray-700 tracking-wide"></span>
+        </div>
+
+        <!-- Menú para desktop -->
+        <div class="hidden md:flex items-center space-x-2">
+          <a href="#problem" class="nav-link">Problema</a>
+          <a href="#solution" class="nav-link">Solución</a>
+          <a href="#benefits" class="nav-link">Beneficios</a>
+          <a href="#financing-types" class="nav-link">Financiación</a>
+        </div>
+
+        <div class="flex items-center space-x-2 sm:space-x-4 nav-buttons">
+          <!-- Botón Agendar llamada - más pequeño en móvil -->
+          <button id="heroReserveBtn" class="btn btn-primary">
+            Agendar llamada
+          </button>
+
+          <!-- Botón hamburguesa para móvil -->
+          <button id="mobileMenuBtn" class="md:hidden p-2 rounded-xl bg-white/10 text-white hover:bg-white/20 transition">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Menú móvil -->
+      <div id="mobileMenu" class="nav-mobile-panel md:hidden hidden max-w-7xl mx-auto mt-3">
+        <div class="px-6 py-4 space-y-3">
+          <a href="#problem" class="nav-mobile-link">Problema</a>
+          <a href="#solution" class="nav-mobile-link">Solución</a>
+          <a href="#benefits" class="nav-mobile-link">Beneficios</a>
+          <a href="#financing-types" class="nav-mobile-link">Financiación</a>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="bg-white pt-20 text-center">
+      <div class="max-w-5xl mx-auto">
+        <h1 class="text-gray-900 text-5xl md:text-6xl font-medium leading-tight mb-10">
+          Consigue <span class="text-violet-700">financiación para tu empresa</span> fácil y rápido
+        </h1>
+        <p class="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
+         Encuentra la mejor financiación comparando distintos bancos en un solo sitio
+        </p>
+
+        <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4 mb-16">
+          <button id="heroSolutionBtn" class="btn btn-primary">
+            Solicitar financiación
+          </button>
+
+          <button id="discoverMoreBtn" class="btn btn-outline">
+            Descubre más
+          </button>
+        </div>
+        <div class="mb-12">
+          <p class="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-60 grayscale mt-8">
+          </p>
+          <div class="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-70 grayscale mt-8">
+            <img src="assets/images/BBVA.png" alt="Logo del banco BBVA" class="h-12">
+            <img src="assets/images/caixa.png" alt="Logo de CaixaBank" class="h-12">
+            <img src="assets/images/santander.png" alt="Logo del banco Santander" class="h-12">
+            <img src="assets/images/sabadell.png" alt="Logo del banco Sabadell" class="h-12">
+          </div>
+        </div>
+      </div>
+
+      <section class="w-full bg-indigo-50 py-16">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Two row bento grid -->
+    <div class="grid grid-cols-1 lg:grid-cols-6 auto-rows-[320px] gap-6">
+      <!-- Industrial problems -->
+      <article class="bg-white/80 backdrop-blur-sm border border-indigo-100 rounded-3xl p-6 flex flex-col gap-4 hover:-translate-y-1 hover:shadow-xl transition lg:col-span-4">
+        <img
+          src="https://images.unsplash.com/photo-1541976076758-347942db197d?auto=format&fit=crop&w=1200&q=80"
+          alt="Planta industrial operando con maquinaria pesada"
+          class="w-full h-40 object-cover rounded-2xl"
+        />
+        <div>
+          <p class="text-xs font-semibold tracking-[0.2em] text-indigo-500 uppercase mb-2">Industriales</p>
+          <h3 class="text-2xl font-semibold text-slate-900 mb-3">Producción frenada por falta de circulante</h3>
+          <p class="text-sm text-slate-600">
+            Las pymes industriales lidian con pedidos confirmados pero capital inmovilizado en inventario. Sin acceso ágil a líneas
+            de corto plazo, los turnos se paran y los proveedores exigen adelantos imposibles.
+          </p>
+        </div>
+      </article>
+
+      <!-- Constructoras -->
+      <article class="bg-slate-900 text-white rounded-3xl p-6 flex flex-col gap-4 hover:-translate-y-1 hover:shadow-xl transition lg:col-span-2">
+        <img
+          src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&w=900&q=80"
+          alt="Equipo constructor supervisando obra"
+          class="w-full h-32 object-cover rounded-2xl"
+        />
+        <div>
+          <p class="text-xs font-semibold tracking-[0.2em] text-amber-300 uppercase mb-2">Constructoras</p>
+          <h3 class="text-xl font-semibold mb-2">Cobros lentos, nóminas urgentes</h3>
+          <p class="text-sm text-slate-200">
+            Las certificaciones tardan semanas y los bancos exigen garantías que comen el margen de obra. Resultado: estrés de caja y proyectos parados.
+          </p>
+        </div>
+      </article>
+
+      <!-- Retail -->
+      <article class="bg-white rounded-3xl border border-slate-200 p-6 flex flex-col gap-4 hover:-translate-y-1 hover:shadow-xl transition lg:col-span-2">
+        <img
+          src="https://images.unsplash.com/photo-1528291151373-1c5658d6f21f?auto=format&fit=crop&w=900&q=80"
+          alt="Tienda retail organizando inventario"
+          class="w-full h-32 object-cover rounded-2xl"
+        />
+        <div>
+          <p class="text-xs font-semibold tracking-[0.2em] text-rose-500 uppercase mb-2">Retail</p>
+          <h3 class="text-xl font-semibold text-slate-900 mb-2">Campañas sin stock financiable</h3>
+          <p class="text-sm text-slate-600">
+            El retail necesita financiar inventario y marketing al mismo tiempo. Sin créditos rotativos claros, cada temporada es un salto al vacío.
+          </p>
+        </div>
+      </article>
+
+      <!-- Consequence overview -->
+      <article class="bg-gradient-to-r from-indigo-600 to-violet-600 rounded-3xl p-8 text-white flex flex-col justify-between hover:-translate-y-1 hover:shadow-xl transition lg:col-span-4">
+        <div>
+          <p class="text-xs font-semibold tracking-[0.2em] text-white/70 uppercase mb-2">Problema transversal</p>
+          <h3 class="text-2xl font-semibold mb-4">Sin visibilidad financiera, todos pierden</h3>
+          <p class="text-sm text-indigo-50">
+            Industrias, constructoras y cadenas retail comparten el mismo obstáculo: no existe un lugar único para comparar bancos, plazos y garantías. Tu equipo dedica horas a correos y hojas de cálculo mientras el negocio necesita liquidez hoy.
+          </p>
+        </div>
+        <div class="mt-6 text-sm text-white/80">
+          Centralizamos la documentación, negociamos con las entidades correctas y activamos la financiación en días, no en meses.
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+      <!-- Problem Section (Bento Grid with Gradient + Animations) -->
+      <section id="problem" class="problem-section py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+          <!-- Title -->
+          <div class="text-center mb-12">
+            <span class="problem-badge"></span>
+            <h2 class="text-2xl md:text-4xl font-bold text-slate-900 mt-4">
+              Financiación transparente, ágil y a tu medida
+            </h2>
+            <p class="text-slate-600 mt-4 max-w-3xl mx-auto">
+              Administramos tu documentos, timing con entidades para que cada paso tenga visibilidad y puedas tomar decisiones
+              sin sorpresas de última hora.
+            </p>
+          </div>
+
+          <!-- Bento Grid -->
+          <div class="problem-grid grid grid-cols-1 md:grid-cols-6 gap-6">
+            <!-- Card 1 -->
+            <article class="problem-card md:col-span-3">
+              <p class="problem-eyebrow">Documentación</p>
+              <h3>Precisión sin esfuerzo</h3>
+              <p>Centralizamos la información en un data room seguro y la adaptamos al formato de cada entidad.
+                Olvida los correos dispersos y las versiones duplicadas.</p>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="problem-card md:col-span-3">
+              <p class="problem-eyebrow">Visibilidad</p>
+              <h3>Elige con claridad</h3>
+              <p>Seguimiento en tiempo real del estado de tu solicitud y comparativa de condiciones por entidad, tasa y
+                garantías requeridas.</p>
+              <ul>
+                
+              </ul>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="problem-card problem-card--accent md:col-span-3">
+              <p class="problem-eyebrow">Condiciones</p>
+              <h3>Cláusulas claras desde el inicio</h3>
+              <p>Accede a tasas, seguros y comisiones transparentes para planificar el flujo de caja futuro. Reducimos el
+                margen de renegociaciones de último minuto.</p>
+              <ul>
+                <li>Escenarios simulados por entidad</li>
+                <li>Benchmark de tasas y seguros</li>
+              </ul>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="problem-card md:col-span-3">
+              <p class="problem-eyebrow">Riesgos comunes</p>
+              <h3>Sin sorpresas al final</h3>
+              <p>Identificamos cláusulas que terminan afectando la salud financiera de tu empresa (covenants, ventas
+                cruzadas, garantías adicionales) y las negociamos a tiempo.</p>
+            </article>
+          </div>
+
+          <!-- CTA -->
+          <div class="text-center mt-16">
+            <button id="problemCtaBtn" class="btn btn-primary">
+              Descubre cómo simplificar tu acceso a crédito
+            </button>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Solution Section -->
+      <section id="solution" class="relative py-24 px-6 bg-gradient-to-b from-indigo-50 via-white to-indigo-100">
+        <div class="max-w-6xl mx-auto">
+          <!-- Title -->
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-16 text-center">
+            ¿Cómo conectas con la financiación que tu negócio necesita?
+          </h2>
+
+          <!-- Steps -->
+          <div class="grid md:grid-cols-3 gap-10">
+            <!-- Step 1 -->
+            <div
+              class="card-animate delay-200 bg-white/70 backdrop-blur-md border border-indigo-100 rounded-2xl p-8 shadow-lg hover:shadow-2xl hover:scale-105 transition">
+              <div
+                class="w-16 h-16 rounded-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white flex items-center justify-center text-2xl font-bold mx-auto mb-6 shadow-lg">
+                1
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-4 text-center">
+                Completa una sola solicitud
+              </h3>
+              <p class="text-gray-700 text-center">
+                Una solicitud simple que se comparte con múltiples instituciones financieras.
+              </p>
+            </div>
+
+            <!-- Step 2 -->
+            <div
+              class="card-animate delay-400 bg-white/70 backdrop-blur-md border border-indigo-100 rounded-2xl p-8 shadow-lg hover:shadow-2xl hover:scale-105 transition">
+              <div
+                class="w-16 h-16 rounded-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white flex items-center justify-center text-2xl font-bold mx-auto mb-6 shadow-lg">
+                2
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-4 text-center">
+                Compara ofertas en tiempo real
+              </h3>
+              <p class="text-gray-700 text-center">
+                Recibe y compara múltiples ofertas de financiamiento en una sola plataforma.
+              </p>
+            </div>
+
+            <!-- Step 3 -->
+            <div
+              class="card-animate delay-600 bg-white/70 backdrop-blur-md border border-indigo-100 rounded-2xl p-8 shadow-lg hover:shadow-2xl hover:scale-105 transition">
+              <div
+                class="w-16 h-16 rounded-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white flex items-center justify-center text-2xl font-bold mx-auto mb-6 shadow-lg">
+                3
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-4 text-center">
+                Elige y activa tu financiamiento
+              </h3>
+              <p class="text-gray-700 text-center">
+                Selecciona la mejor opción y activa tu financiamiento en pocos días.
+              </p>
+            </div>
+          </div>
+
+          <button id="solutionCtaBtn" class="btn btn-primary mt-10">
+            Reserva una llamada y comienza hoy
+          </button>
+        </div>
+      </section>
+<!-- Financing Types Section -->
+<section id="financing-types" class="financing-section py-24 px-6">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-16 financing-header">
+      <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mt-4">
+        Todas las líneas de financiación en un único lugar
+      </h2>
+      <p class="text-lg text-slate-600 max-w-3xl mx-auto mt-4">
+        Infraestructura de financiación alineada con el funcionamiento de tu negocio.
+      </p>
+    </div>
+
+	<div class="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+	  <article class="rounded-2xl border border-slate-100 bg-white p-6 flex flex-col gap-3">
+	    <div class="w-10 h-10 rounded-full bg-indigo-50 text-indigo-600 flex items-center justify-center text-lg">
+	      <i class="fas fa-exchange-alt"></i>
+	    </div>
+	    <h3 class="text-xl font-semibold text-slate-900">Liquidez inmediata</h3>
+	    <p class="text-sm text-slate-600">Factoring, confirming y pólizas rotativas que entran y salen según tu ciclo de cobros.</p>
+	  </article>
+
+	  <article class="rounded-2xl border border-slate-100 bg-white p-6 flex flex-col gap-3">
+	    <div class="w-10 h-10 rounded-full bg-violet-50 text-violet-600 flex items-center justify-center text-lg">
+	      <i class="fas fa-rocket"></i>
+	    </div>
+	    <h3 class="text-xl font-semibold text-slate-900">Crecimiento</h3>
+	    <p class="text-sm text-slate-600">Venture debt y préstamos senior para impulsar expansión sin frenar la operación.</p>
+	  </article>
+
+	  <article class="rounded-2xl border border-slate-100 bg-white p-6 flex flex-col gap-3">
+	    <div class="w-10 h-10 rounded-full bg-amber-50 text-amber-600 flex items-center justify-center text-lg">
+	      <i class="fas fa-shield-alt"></i>
+	    </div>
+	    <h3 class="text-xl font-semibold text-slate-900">Garantías</h3>
+	    <p class="text-sm text-slate-600">Avales, seguros de crédito y compromisos bancarios que liberan tus licitaciones.</p>
+	  </article>
+
+	  <article class="rounded-2xl border border-slate-100 bg-white p-6 flex flex-col gap-3">
+	    <div class="w-10 h-10 rounded-full bg-slate-900 text-white flex items-center justify-center text-lg">
+	      <i class="fas fa-university"></i>
+	    </div>
+	    <h3 class="text-xl font-semibold text-slate-900">Activos & capex</h3>
+	    <p class="text-sm text-slate-600">Leasing, lease back e hipotecas corporativas alineadas al flujo del activo financiado.</p>
+	  </article>
+	</div>
+
+	<div class="rounded-3xl bg-slate-900 text-white mt-8 p-8 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+	  <div>
+	    <p class="text-xs uppercase tracking-[0.2em] text-white/70">Modo cartera</p>
+	    <h3 class="text-2xl font-semibold mb-2">Combinamos los productos para darte visibilidad total</h3>
+	    <p class="text-sm text-slate-100">Un dashboard de condiciones, plazos y garantías para elegir la mezcla óptima sin emails ni excels infinitos.</p>
+	  </div>
+	  <div class="flex flex-wrap gap-2 text-xs font-medium">
+	    <span class="px-4 py-1 rounded-full bg-white/15">TPV & cobros</span>
+	    <span class="px-4 py-1 rounded-full bg-white/15">Supply chain</span>
+	    <span class="px-4 py-1 rounded-full bg-white/15">Préstamos LP</span>
+	    <span class="px-4 py-1 rounded-full bg-white/15">Seguros crédito</span>
+	  </div>
+	</div>
+
+    <div class="text-center mt-16">
+      <button id="financingCtaBtn" class="btn btn-primary">
+        Consultar opciones disponibles
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6l6 6-6 6" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+ <!-- Key Benefits Section (fondo más oscuro) -->
+<section id="benefits" class="relative py-24 px-6 overflow-hidden">
+  <!-- Fondo con gradiente más oscuro -->
+  <div class="absolute inset-0 bg-gradient-to-br from-[#0b032d] via-[#1a0b49] to-[#2c1b78]"></div>
+  <!-- Textura opcional -->
+  <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/dark-mosaic.png')] opacity-20"></div>
+
+  <div class="relative max-w-5xl mx-auto text-white">
+    <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
+      ¿Por qué elegirnos?
+    </h2>. 
+
+    <div class="grid md:grid-cols-3 gap-8 mb-16">
+      <div class="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8 shadow-xl hover:shadow-2xl hover:scale-105 transition">
+        <div class="w-12 h-12 bg-gradient-to-r from-violet-500 to-indigo-400 rounded-full flex items-center justify-center text-white mb-6 shadow-md">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-4">Tiempo es poder</h3>
+        <p class="text-gray-300">No pierdas semanas en trámites. Una solicitud a múltiples bancos y acelera las respuestas.</p>
+      </div>
+
+      <div class="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8 shadow-xl hover:shadow-2xl hover:scale-105 transition">
+        <div class="w-12 h-12 bg-gradient-to-r from-violet-500 to-indigo-400 rounded-full flex items-center justify-center text-white mb-6 shadow-md">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-4">Decisiones con visión estratégica</h3>
+        <p class="text-gray-300">Visualiza tasas, comisiones y plazos con claridad total, luego  compara para elegir.</p>
+      </div>
+
+      <div class="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8 shadow-xl hover:shadow-2xl hover:scale-105 transition">
+        <div class="w-12 h-12 bg-gradient-to-r from-violet-500 to-indigo-400 rounded-full flex items-center justify-center text-white mb-6 shadow-md">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-4">Ve un paso adelante</h3>
+        <p class="text-gray-300">Planifica tu financiación, prevé los vencimientos de tus pólizas y negocia con visión, no con prisa.</p>
+      </div>
+    </div>
+
+    <div class="text-center">
+      <button id="benefitsReserveBtn" class="btn btn-primary">
+        Habla con un experto y acelera tu financiación
+      </button>
+    </div>
+  </div>
+</section>
+
+
+    <!-- FAQs Section -->
+    <section id="faqs" class="faq-section relative py-24 px-6">
+      <div class="faq-gradient" aria-hidden="true"></div>
+      <div class="relative max-w-5xl mx-auto">
+        <div class="text-center mb-14">
+      
+          <h2 class="text-3xl md:text-4xl font-bold text-white mt-4" id="faq-title">
+            Preguntas frecuentes sobre financiación empresarial
+          </h2>
+          <p class="text-indigo-100 mt-4 max-w-3xl mx-auto">
+            Anticipamos las preguntas que surgen antes de solicitar capital.
+            Si no encuentras lo que buscas, agenda una llamada y lo resolvemos juntos.
+          </p>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-3 mb-12">
+          <div class="faq-highlight-card">
+            <p class="text-indigo-200 text-sm uppercase tracking-widest">Tiempo medio</p>
+            <p class="text-3xl font-semibold text-white mt-3">72 h</p>
+            <p class="text-indigo-100 mt-2">Respuesta preliminar desde la primera entidad interesada.</p>
+          </div>
+          <div class="faq-highlight-card">
+            <p class="text-indigo-200 text-sm uppercase tracking-widest">Documentación digital</p>
+            <p class="text-3xl font-semibold text-white mt-3">1 login</p>
+            <p class="text-indigo-100 mt-2">Adminitramos tu data room, sin complicaciones.</p>
+          </div>
+          <div class="faq-highlight-card">
+            <p class="text-indigo-200 text-sm uppercase tracking-widest">Acompañamiento</p>
+            <p class="text-3xl font-semibold text-white mt-3">360°</p>
+            <p class="text-indigo-100 mt-2">Equipo experto a tu lado desde el inicio al desembolso.</p>
+          </div>
+        </div>
+
+        <div class="space-y-4" id="faqsContainer" aria-live="polite" aria-labelledby="faq-title">
+          <!-- Las FAQs se generan dinámicamente -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="bg-gradient-to-b from-black via-indigo-950 to-black py-24 px-">
+      <div class="mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+          Facilitamos el acceso a la financiación para tu empresa.
+        </h2>
+        <p class="text-gray-300 text-xl mb-10">
+
+          Nos encargamos de todo el proceso y te exponemos las mejores alternativas para que tú decidas.
+        </p>
+
+        <button id="solutionCtaBtn2" class="btn btn-primary">
+          Reserva una llamada y comienza hoy
+        </button>
+      </div>
+    </section>
+
+<!-- Footer -->
+<footer class="bg-gradient-to-b from-black via-indigo-950 to-black text-gray-400 py-12 px-6 border-t border-gray-950">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
+    <!-- Columna 1 -->
+    <div>
+      <div class="text-white text-2xl font-semibold mb-4">Lemi Finance</div>
+      <p class="mb-4">Simplificamos el acceso a financiación bancaria para tu empresa.</p>
+    </div>
+
+    <!-- Columna 2 -->
+    <div>
+      <h3 class="text-white font-medium mb-4">Enlaces rápidos</h3>
+      <ul class="space-y-2">
+        <li><a href="#problem" class="hover:text-white">Problema</a></li>
+        <li><a href="#solution" class="hover:text-white">Solución</a></li>
+        <li><a href="#benefits" class="hover:text-white">Beneficios</a></li>
+      </ul>
+    </div>
+
+    <!-- Columna 3 -->
+    <div>
+      <h3 class="text-white font-medium mb-4">Legal</h3>
+      <ul class="space-y-2">
+        <li><a href="#" onclick="openModal('termsModal')" class="hover:text-white">Términos de servicio</a></li>
+        <li><a href="#" onclick="openModal('privacyModal')" class="hover:text-white">Política de privacidad</a></li>
+        <li><a href="#" onclick="openModal('cookiesModal')" class="hover:text-white">Cookies</a></li>
+      </ul>
+    </div>
+
+    <!-- Columna 4 -->
+    <div>
+      <h3 class="text-white font-medium mb-4">Contacto</h3>
+      <ul class="space-y-2">
+        <li>info@lemi.es</li>
+        <li>+34 617 434 266</li>
+        <li>Comunidad Valenciana, España</li>
+      </ul>
+    </div>
+
+    <!-- 🟣 Columna 5: Redes Sociales -->
+    <div>
+      <h3 class="text-white font-medium mb-4">Síguenos</h3>
+      <div class="flex flex-col items-center space-y-3 mt-2">
+        <a href="https://www.linkedin.com/company/lemifinance/?viewAsMember=true" target="_blank" rel="noopener noreferrer"
+          class="text-gray-400 hover:text-indigo-400 transition">
+          <!-- Ícono de LinkedIn -->
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6">
+            <path
+              d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5h4V24h-4V8.5zm7.98 0h3.84v2.1h.05c.54-1 1.87-2.1 3.85-2.1 4.11 0 4.86 2.71 4.86 6.23V24h-4v-7.75c0-1.84-.03-4.21-2.56-4.21-2.56 0-2.95 2-2.95 4.08V24h-4V8.5z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Línea inferior -->
+  <div class="max-w-7xl mx-auto mt-8 pt-8 border-t border-gray-950 text-center">
+    <p>© 2025 Lemi Finance. Todos los derechos reservados.</p>
+  </div>
+</footer>
+<!-- 🧾 Modales Legales -->
+<div id="legalModals">
+  <!-- Política de Privacidad -->
+  <div id="privacyModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm hidden items-center justify-center z-50">
+    <div class="bg-white max-w-3xl w-full mx-4 rounded-xl shadow-2xl overflow-hidden">
+      <div class="flex justify-between items-center bg-gradient-to-r from-indigo-700 to-violet-700 text-white px-6 py-4">
+        <h3 class="text-lg font-semibold">Política de Privacidad</h3>
+        <button class="text-white text-2xl leading-none" onclick="closeModal('privacyModal')">&times;</button>
+      </div>
+      <div class="p-6 max-h-[70vh] overflow-y-auto text-gray-700">
+        <article class="legal-modal-body">
+          <section>
+            <h4>Identidad del responsable</h4>
+            <ul class="legal-list">
+              <li><strong>Denominación social:</strong> Lemi Finance S.L.</li>
+              <li><strong>CIF:</strong> B1235778</li>
+              <li><strong>Domicilio:</strong> Calle Mestre Sanchis Almiñano 8, 4º piso, Valencia</li>
+              <li><strong>Contacto:</strong> info@lemi.es · www.lemi.es</li>
+            </ul>
+          </section>
+
+          <section>
+            <h4>Finalidades del tratamiento</h4>
+            <p>Tratamos los datos para:</p>
+            <ul class="legal-list">
+              <li>Dar respuesta a consultas comerciales y agendar reuniones.</li>
+              <li>Prestar servicios de intermediación financiera, consultoría o formación.</li>
+              <li>Gestionar el acceso a la plataforma y mantener el data room actualizado.</li>
+              <li>Enviar comunicaciones operativas y avisos legales relacionados con los servicios contratados.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h4>Legitimación y conservación</h4>
+            <ul class="legal-list">
+              <li>El interés legítimo y la ejecución de contratos sustentan los tratamientos principales.</li>
+              <li>El consentimiento explícito habilita el envío de comunicaciones comerciales.</li>
+              <li>Conservamos la información mientras dure la relación contractual y durante los plazos exigidos por la
+                normativa mercantil y fiscal.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h4>Comunicación de datos</h4>
+            <p>Compartiremos información únicamente con financiadores y proveedores necesarios para tramitar tu
+              solicitud, siempre bajo acuerdos de confidencialidad y dentro del Espacio Económico Europeo. No vendemos ni
+              cedemos datos sin una base jurídica válida.</p>
+          </section>
+
+          <section>
+            <h4>Derechos de los titulares</h4>
+            <p>Puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad
+              enviando una solicitud, junto con copia de tu documento identificativo, a <strong>info@lemi.es</strong> o a la
+              dirección postal indicada. Responderemos en un máximo de 30 días.</p>
+          </section>
+
+          <section>
+            <h4>Seguridad y confidencialidad</h4>
+            <p>Aplicamos cifrado, controles de acceso y monitoreo continuo para salvaguardar la información. En caso de
+              incidentes notificables, seguiremos los protocolos del RGPD y comunicaremos cualquier brecha a la autoridad
+              competente y a los afectados.</p>
+          </section>
+        </article>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Términos de Servicio -->
+  <div id="termsModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm hidden items-center justify-center z-50">
+    <div class="bg-white max-w-3xl w-full mx-4 rounded-xl shadow-2xl overflow-hidden">
+      <div class="flex justify-between items-center bg-gradient-to-r from-indigo-700 to-violet-700 text-white px-6 py-4">
+        <h3 class="text-lg font-semibold">Términos de Servicio</h3>
+        <button class="text-white text-2xl leading-none" onclick="closeModal('termsModal')">&times;</button>
+      </div>
+      <div class="p-6 max-h-[70vh] overflow-y-auto text-gray-700">
+        <article class="legal-modal-body">
+          <section>
+            <h4>Información general</h4>
+            <ul class="legal-list">
+              <li><strong>Titular:</strong> Lemi Finance S.L. · CIF B1235778.</li>
+              <li><strong>Sede:</strong> Calle Mestre Sanchis Almiñano 8, 4º piso, Valencia.</li>
+              <li><strong>Contacto:</strong> info@lemi.es · +34 617 434 266.</li>
+              <li>El uso de www.lemi.es implica la aceptación íntegra de estas condiciones y de la Política de Privacidad.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h4>Condiciones de uso de la plataforma</h4>
+            <ul class="legal-list">
+              <li>Lemi no concede financiación directa; intermedia entre empresas y entidades de crédito.</li>
+              <li>El usuario garantiza la veracidad de los datos aportados y mantendrá la confidencialidad de sus
+                credenciales.</li>
+              <li>El uso fraudulento o contrario a la ley habilita a Lemi a suspender o cancelar la cuenta sin derecho a
+                indemnización.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h4>Servicios prestados</h4>
+            <ul class="legal-list">
+              <li><strong>Empresas solicitantes:</strong> publicación de operaciones, acompañamiento en la tramitación y
+                acceso a múltiples financiadores.</li>
+              <li><strong>Entidades de financiación:</strong> marketplace con data room estructurado, informes de riesgo y
+                canales de contacto supervisados.</li>
+              <li><strong>Consultoría y formación:</strong> programas a medida y recursos descargables.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h4>Tarifas, cancelaciones y responsabilidad</h4>
+            <ul class="legal-list">
+              <li>Las comisiones se comunican antes de formalizar una operación y pueden ser fijas o variables.</li>
+              <li>Existe un plazo de desistimiento de 7 días naturales desde el alta del servicio.</li>
+              <li>La plataforma no garantiza la obtención de financiación ni la disponibilidad continua del servicio.</li>
+              <li>Cada usuario es responsable de evaluar la solvencia de sus contrapartes y de cumplir la normativa que le
+                resulte aplicable.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h4>Propiedad intelectual y confidencialidad</h4>
+            <p>Los contenidos, marcas y herramientas son propiedad de Lemi Finance S.L. o de sus licenciantes. Los datos
+              aportados por los usuarios se emplean exclusivamente para los fines contratados y no pueden reutilizarse fuera de la plataforma sin autorización expresa.</p>
+          </section>
+
+          <section>
+            <h4>Jurisdicción y actualizaciones</h4>
+            <p>Estas condiciones se rigen por la legislación española. Las partes se someten a los juzgados y tribunales de
+              Valencia, salvo normativa imperativa. Cualquier actualización se comunicará por correo electrónico y se
+              publicará en el sitio web.</p>
+          </section>
+        </article>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Política de Cookies -->
+  <div id="cookiesModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm hidden items-center justify-center z-50">
+    <div class="bg-white max-w-3xl w-full mx-4 rounded-xl shadow-2xl overflow-hidden">
+      <div class="flex justify-between items-center bg-gradient-to-r from-indigo-700 to-violet-700 text-white px-6 py-4">
+        <h3 class="text-lg font-semibold">Política de Cookies</h3>
+        <button class="text-white text-2xl leading-none" onclick="closeModal('cookiesModal')">&times;</button>
+      </div>
+
+
+Firefox
+
+
+Safari
+
+
+
+5. Contacto
+Si tiene dudas sobre esta Política de Cookies, puede ponerse en contacto con nosotros en:
+  info@lemi.es
+
+</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 🍪 Banner de Cookies conforme a normativa 2025 -->
+<div id="cookieBanner" class="fixed bottom-4 left-1/2 -translate-x-1/2 bg-white/95 border border-gray-200 shadow-2xl rounded-2xl p-6 w-[90%] max-w-lg z-50 flex flex-col gap-4 sm:gap-2 sm:flex-row sm:items-center animate-fade-in">
+  <div class="text-gray-700 text-sm flex-1  leading-relaxed">
+    Utilizamos <strong>cookies propias y de terceros</strong> con fines técnicos, analíticos y de personalización.  
+    Puedes aceptar todas, rechazarlas o <button onclick="openModal('cookiesModal')" class="text-indigo-600 underline hover:text-indigo-800 font-medium">configurar tus preferencias</button>.  
+    Para más información, consulta nuestra <a href="#" onclick="openModal('cookiesModal')" class="text-indigo-600 underline hover:text-indigo-800 font-medium">Política de Cookies</a>.
+  </div>
+
+  <div class="flex gap-2 sm:flex-col sm:gap-2">
+    <button id="rejectCookiesBtn" class="btn btn-outline btn-sm">
+      Rechazar
+    </button>
+    <button id="acceptCookiesBtn" class="btn btn-primary btn-sm">
+      Aceptar
+    </button>
+  </div>
+</div>
+
+
+    <!-- Modal -->
+    <div id="modal" class="fixed inset-0 z-50 overflow-y-auto hidden">
+      <div class="modal-overlay fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm" id="modalOverlay"></div>
+
+      <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+        <div
+          class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-2xl">
+          <div class="bg-white px-6 py-4 border-b border-gray-200 flex justify-between items-center">
+            <h3 class="text-lg font-semibold text-gray-900">Agenda una llamada</h3>
+            <button id="closeModalBtn" class="text-gray-400 hover:text-gray-600 text-2xl">&times;</button>
+          </div>
+
+          <div class="bg-white px-6 py-10">
+            <p class="text-gray-600 mb-6">Completa el formulario y un especialista se pondrá en contacto contigo en
+              menos de 24 horas.</p>
+
+            <form class="space-y-4" id="reservationForm">
+              <div>
+                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nombre completo</label>
+                <input type="text" id="name"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+                  required>
+              </div>
+
+              <div>
+                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                <input type="email" id="email"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+                  required>
+              </div>
+
+              <div>
+                <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Teléfono</label>
+                <input type="tel" id="phone"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+                  required>
+              </div>
+
+              <div>
+                <label for="company" class="block text-sm font-medium text-gray-700 mb-1">Empresa</label>
+                <input type="text" id="company"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+                  required>
+              </div>
+
+              <div>
+                <label for="cif" class="block text-sm font-medium text-gray-700 mb-1">CIF/NIF</label>
+                <input type="text" id="cif"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+                  placeholder="Ej: A12345678" required maxlength="9">
+                <p class="text-xs text-gray-500 mt-1">Formato: Letra + 8 números (CIF) o 8 números + letra (NIF)</p>
+              </div>
+
+              <div>
+                <label for="message" class="block text-sm font-medium text-gray-700 mb-1">¿En qué podemos
+                  ayudarte?</label>
+                <textarea id="message" rows="3"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+              </div>
+
+              <div class="pt-4">
+                <button type="submit" class="btn btn-primary w-full justify-center">
+                  Reservar llamada gratuita
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Botón flotante de WhatsApp -->
+  <a href="https://wa.me/34617434266?text=Hola,%20me%20interesa%20saber%20más%20sobre%20la%20financiación%20para%20mi%20empresa"
+    class="whatsapp-float" target="_blank" id="whatsappFloatBtn">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</body>
+
+<script>
+
+  // Main JavaScript for lemi landing v2
+
+  document.addEventListener('DOMContentLoaded', function () {
+    // Modal functionality
+    const modal = document.getElementById('modal');
+    const modalOverlay = document.getElementById('modalOverlay');
+    const closeModalBtn = document.getElementById('closeModalBtn');
+    const reserveCallBtn = document.getElementById('reserveCallBtn');
+    const heroReserveBtn = document.getElementById('heroReserveBtn');
+    const solutionReserveBtn = document.getElementById('solutionReserveBtn');
+    const benefitsReserveBtn = document.getElementById('benefitsReserveBtn');
+    const testimonialsReserveBtn = document.getElementById('testimonialsReserveBtn');
+    const finalCtaBtn = document.getElementById('finalCtaBtn');
+    const reservationForm = document.getElementById('reservationForm');
+    const discoverMoreBtn = document.getElementById('discoverMoreBtn');
+    const problemCtaBtn = document.getElementById('problemCtaBtn');
+    const solutionCtaBtn = document.getElementById('solutionCtaBtn');
+    const solutionCtaBtn2 = document.getElementById('solutionCtaBtn2');
+    const heroSolutionBtn = document.getElementById('heroSolutionBtn');
+
+    // Open modal function
+    function openModal() {
+      modal.classList.remove('hidden');
+      setTimeout(() => {
+        modalOverlay.classList.add('active');
+      }, 10);
+      document.body.style.overflow = 'hidden';
+    }
+
+    // Close modal function
+    function closeModal() {
+      modalOverlay.classList.remove('active');
+      setTimeout(() => {
+        modal.classList.add('hidden');
+      }, 300);
+      document.body.style.overflow = 'auto';
+    }
+
+    // Event listeners for opening modal
+    if (reserveCallBtn) reserveCallBtn.addEventListener('click', openModal);
+    if (heroReserveBtn) heroReserveBtn.addEventListener('click', openModal);
+    if (solutionReserveBtn) solutionReserveBtn.addEventListener('click', openModal);
+    if (benefitsReserveBtn) benefitsReserveBtn.addEventListener('click', openModal);
+    if (testimonialsReserveBtn) testimonialsReserveBtn.addEventListener('click', openModal);
+    if (finalCtaBtn) finalCtaBtn.addEventListener('click', openModal);
+    if (discoverMoreBtn) discoverMoreBtn.addEventListener('click', openModal);
+    if (problemCtaBtn) problemCtaBtn.addEventListener('click', openModal);
+    if (solutionCtaBtn) solutionCtaBtn.addEventListener('click', openModal);
+    if (solutionCtaBtn2) solutionCtaBtn2.addEventListener('click', openModal);
+    if (heroSolutionBtn) heroSolutionBtn.addEventListener('click', openModal);
+
+    // Event listeners for closing modal
+    if (closeModalBtn) closeModalBtn.addEventListener('click', closeModal);
+    if (modalOverlay) modalOverlay.addEventListener('click', closeModal);
+
+    // Form submission - Envío por WhatsApp
+    if (reservationForm) {
+      reservationForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        // Get form data
+        const formData = {
+          name: document.getElementById('name').value,
+          email: document.getElementById('email').value,
+          phone: document.getElementById('phone').value,
+          company: document.getElementById('company').value,
+          message: document.getElementById('message').value
+        };
+
+        // Crear mensaje para WhatsApp
+        const whatsappMessage = `
+            ¡Hola! Me interesa la financiación para mi empresa:
+
+            *Nombre:* ${formData.name}
+            *Email:* ${formData.email}
+            *Teléfono:* ${formData.phone}
+            *Empresa:* ${formData.company}
+            *Mensaje:* ${formData.message || 'Sin mensaje adicional'}
+
+            Por favor, contáctenme para agendar una llamada.`;
+
+        // Codificar el mensaje para URL
+        const encodedMessage = encodeURIComponent(whatsappMessage);
+
+        // Número de WhatsApp (reemplaza con tu número)
+        const phoneNumber = '34617434266'; // Formato internacional sin +
+
+        // Crear URL de WhatsApp
+        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+        // Abrir WhatsApp
+        window.open(whatsappUrl, '_blank');
+
+        // Mostrar mensaje de confirmación
+        alert('¡Redirigiendo a WhatsApp! Un especialista se pondrá en contacto contigo.');
+
+        // Close modal and reset form
+        closeModal();
+        reservationForm.reset();
+      });
+    }
+    // WhatsApp float button functionality
+    const whatsappFloatBtn = document.getElementById('whatsappFloatBtn');
+
+    if (whatsappFloatBtn) {
+      // Puedes agregar funcionalidad adicional aquí si es necesario
+      console.log('Botón de WhatsApp listo');
+    }
+    // FAQ functionality
+    const faqs = [
+      {
+        question: "¿Qué documentación necesito para iniciar la solicitud?",
+        subtitle: "Checklist guiado 100% digital",
+        answer: "Solo necesitas CIF o NIF, escrituras vigentes, últimas cuentas anuales y extractos bancarios. Subes todo en un único data room y nuestro equipo valida la consistencia antes de compartirla con las entidades."
+      },
+      {
+        question: "¿Cuánto tarda Lemi Finance en conseguir una respuesta?",
+        subtitle: "Primer feedback en 24-72 h",
+        answer: "En cuanto enviamos tu expediente recibimos pre-respuestas en cuestión de horas y te mantenemos al tanto del pipeline. Las propuestas finales dependen del producto, pero normalmente se cierran en menos de 15 días."
+      },
+      {
+        question: "¿Trabajan con empresas en toda España?",
+        subtitle: "Cobertura nacional y remota",
+        answer: "Sí, acompañamos a pymes y scaleups en cualquier comunidad autónoma. Coordinamos reuniones virtuales con bancos nacionales y también con financiadores regionales que operan en tu sector."
+      },
+      {
+        question: "¿Puedo combinar financiación bancaria y alternativa?",
+        subtitle: "Estructuras híbridas personalizadas",
+        answer: "Diseñamos combinaciones de préstamo bancario, venture debt, leasing o líneas de circulante para equilibrar coste y flexibilidad. Nos aseguramos de que cada producto encaje con tu flujo de caja."
+      },
+      {
+        question: "¿Tiene algún coste anticipado usar Lemi Finance?",
+        subtitle: "Modelo success fee transparente",
+        answer: "No pagas por registrarte ni por analizar tus opciones. Solo aplicamos honorarios cuando decides contratar una de las operaciones gestionadas con nosotros y conoces el importe desde el inicio."
+      }
+    ];
+
+    const faqsContainer = document.getElementById('faqsContainer');
+
+    if (faqsContainer) {
+      faqs.forEach((faq, index) => {
+        const faqElement = document.createElement('div');
+        faqElement.className = 'faq-item';
+        faqElement.innerHTML = `
+                <button type="button" class="faq-question" id="faq-question-${index}" aria-expanded="false">
+                    <div class="flex items-start gap-4">
+                        <span class="faq-number">${String(index + 1).padStart(2, '0')}</span>
+                        <div>
+                            <span class="faq-question-title">${faq.question}</span>
+                            ${faq.subtitle ? `<p class="faq-question-subtitle">${faq.subtitle}</p>` : ''}
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                    </svg>
+                </button>
+                <div class="faq-answer" id="faq-answer-${index}">
+                    <p>${faq.answer}</p>
+                </div>
+            `;
+
+        faqsContainer.appendChild(faqElement);
+
+        // Add click event to toggle FAQ answer
+        const questionEl = document.getElementById(`faq-question-${index}`);
+        const answerEl = document.getElementById(`faq-answer-${index}`);
+
+        questionEl.addEventListener('click', () => {
+          answerEl.classList.toggle('active');
+          const isOpen = answerEl.classList.contains('active');
+          questionEl.setAttribute('aria-expanded', isOpen);
+          faqElement.classList.toggle('active', isOpen);
+
+          // Rotate icon
+          const icon = questionEl.querySelector('svg');
+          icon.classList.toggle('transform', isOpen);
+          icon.classList.toggle('rotate-180', isOpen);
+        });
+      });
+    }
+
+    // Navigation scroll effect
+    const nav = document.querySelector('nav');
+    const financingCtaBtn = document.getElementById('financingCtaBtn');
+    if (financingCtaBtn) financingCtaBtn.addEventListener('click', openModal);
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    });
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          const navHeight = nav.offsetHeight;
+          const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navHeight;
+
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+
+    // Animation on scroll
+    function initAnimations() {
+      const animatedElements = document.querySelectorAll('.card-hover, .progress-bar');
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-fade-in');
+          }
+        });
+      }, {
+        threshold: 0.1
+      });
+
+      animatedElements.forEach(el => {
+        observer.observe(el);
+      });
+    }
+
+    initAnimations();
+    });
+
+      // === Sistema Legal (Modales + Cookies) ===
+    // Funciones modales para secciones legales
+    window.openModal = function (id) {
+      const modal = document.getElementById(id);
+      if (modal) {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+      }
+    };
+
+    window.closeModal = function (id) {
+      const modal = document.getElementById(id);
+      if (modal) {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      }
+    };
+
+// === Sistema Legal: Cookies conforme normativa 2025 ===
+const cookieBanner = document.getElementById('cookieBanner');
+const acceptBtn = document.getElementById('acceptCookiesBtn');
+const rejectBtn = document.getElementById('rejectCookiesBtn');
+
+if (cookieBanner && acceptBtn && rejectBtn) {
+  // Ver si el usuario ya tomó una decisión
+  const cookieConsent = localStorage.getItem('cookieConsent');
+
+  if (!cookieConsent) {
+    cookieBanner.classList.remove('hidden');
+  } else {
+    cookieBanner.remove();
+  }
+
+  // Aceptar todas las cookies
+  acceptBtn.addEventListener('click', () => {
+    localStorage.setItem('cookieConsent', 'accepted');
+    cookieBanner.remove();
+    enableAnalyticsCookies(); // activa scripts analíticos o de terceros
+  });
+
+  // Rechazar todas las cookies
+  rejectBtn.addEventListener('click', () => {
+    localStorage.setItem('cookieConsent', 'rejected');
+    cookieBanner.remove();
+    disableAnalyticsCookies();
+  });
+      // Legal Modal Functionality
+    const legalLinks = document.querySelectorAll('.legal-link');
+    const modalLegal = document.getElementById('modal-legal');
+    const modalOverlayLegal = document.getElementById('modalOverlayLegal');
+    const closeModalLegalBtn = document.getElementById('closeModalLegalBtn');
+    const acceptLegalBtn = document.getElementById('acceptLegalBtn');
+    const legalContent = document.getElementById('legal-content');
+    const modalLegalTitle = document.getElementById('modal-legal-title');
+
+    // Legal documents content
+    const legalDocuments = {
+      'aviso': {
+        title: 'Aviso Legal - Términos de Servicio',
+        content: `
+          <h2>AVISO LEGAL</h2>
+          <p><strong>Denominación Social:</strong> Lemi Finance S.L.<br>
+          <strong>CIF:</strong> B1235778<br>
+          <strong>Domicilio Social:</strong> Calle Mestre Sanchis Almiñano 8, 4º piso<br>
+          <strong>Correo electrónico:</strong> info@lemi.es<br>
+          <strong>Web:</strong> www.lemi.es</p>
+
+          <h3>1. Objeto</h3>
+          <p>1.1. Lemi Finance S.L. (en adelante, <em>el prestador</em>), responsable del sitio web, pone a disposición de los usuarios el presente documento, con el que pretende dar cumplimiento a las obligaciones dispuestas en la Ley 34/2002, de Servicios de la Sociedad de la Información y del Comercio Electrónico (LSSI-CE), así como informar a todos los usuarios del sitio web respecto a las condiciones de uso del mismo.</p>
+          <p>1.2. Toda persona que acceda a este sitio web y utilice sus servicios, o facilite sus datos, asume el papel de usuario, comprometiéndose a la observancia y cumplimiento riguroso de las disposiciones aquí contenidas, así como a cualesquiera otra disposición legal que fuera de aplicación.</p>
+          
+          <h3>2. Identidad de las partes</h3>
+          <p>2.1. Por una parte, el prestador, identificado más arriba.<br>
+          2.2. Por otra, el usuario, registrado en el sitio web y que será responsable de la veracidad de los datos personales facilitados al prestador.</p>
+          
+          <h3>3. Obligaciones del usuario</h3>
+          <p>3.1. El usuario será responsable del tratamiento confidencial y la adecuada custodia de sus contraseñas, evitando el acceso de terceras personas no autorizadas.</p>
+          
+          <h3>8. Legislación y jurisdicción</h3>
+          <p>8.1. La ley aplicable en caso de disputa o conflicto de interpretación de los términos de estas Condiciones de Uso, así como cualquier cuestión relacionada con los servicios del Portal, será la ley española.<br>
+          8.2. Para la resolución de cualquier controversia que pudiera surgir con ocasión del uso del Portal y sus servicios, las partes acuerdan someterse a la jurisdicción de los jueces y tribunales de la ciudad de Barcelona.</p>
+        `
+      },
+      'privacidad': {
+        title: 'Política de Privacidad',
+        content: `
+          <h2>POLÍTICA DE PRIVACIDAD</h2>
+          
+          <h3>1. Protección de datos</h3>
+          <p>1.1. El prestador se encuentra profundamente comprometido con el cumplimiento de la normativa española y europea de protección de datos de carácter personal, en especial el <strong>Reglamento (UE) 2016/679 (RGPD)</strong> y la <strong>Ley Orgánica 3/2018, de 5 de diciembre (LOPDGDD)</strong>, garantizando la implementación de las medidas de seguridad correspondientes.</p>
+          <p>1.2. Mediante la marcación de las correspondientes casillas en los formularios de recogida de datos del sitio web, los usuarios aceptan expresamente y de forma libre e inequívoca que sus datos personales sean tratados por parte del prestador para las finalidades indicadas en cada caso.</p>
+          <p>1.3. Las finalidades principales del tratamiento serán: atender solicitudes de información o contacto, gestionar consultas, prestar servicios de consultoría financiera y estratégica, facilitar la adquisición de archivos programados de índole financiera, así como asisitir o vender cursos y manuales relacionados con actividades empresariales y financieras.</p>
+          <p>1.4. El usuario podrá ejercer sus derechos de acceso, rectificación, supresión, oposición, limitación del tratamiento y portabilidad de los datos, remitiendo una solicitud expresa, junto a copia de su DNI, a la dirección: <strong>Calle Mestre Sanchis Almiñano 8, 4º piso</strong>, o al correo electrónico: <strong>info@lemi.es</strong>.</p>
+        `
+      },
+      'cookies': {
+        title: 'Política de Cookies',
+        content: `
+          <h2>Política de Cookies</h2>
+          
+          <h3>1. ¿Qué son las cookies?</h3>
+          <p>Las cookies son archivos que se descargan en su dispositivo al acceder a determinadas páginas web. Permiten, entre otras cosas, almacenar y recuperar información sobre los hábitos de navegación de un usuario o de su equipo, y dependiendo de la información que contengan y de cómo utilice su equipo, pueden usarse para reconocer al usuario.</p>
+          <p>El navegador del usuario almacena cookies en el disco duro únicamente durante la sesión actual, ocupando un espacio mínimo y sin perjudicar al ordenador. La mayoría se borran automáticamente al finalizar la sesión (cookies de sesión).</p>
+          
+          <h3>2. Tipos de cookies utilizadas en este sitio web</h3>
+          <ul>
+            <li><strong>Cookies técnicas</strong>: permiten la navegación y el uso de las diferentes opciones o servicios del sitio.</li>
+            <li><strong>Cookies de personalización</strong>: permiten acceder al servicio con características predefinidas.</li>
+            <li><strong>Cookies de análisis</strong>: permiten cuantificar el número de usuarios y analizar su uso del sitio.</li>
+            <li><strong>Cookies publicitarias</strong>: gestionan los espacios publicitarios del sitio.</li>
+            <li><strong>Cookies de publicidad comportamental</strong>: almacenan información del comportamiento de los usuarios.</li>
+          </ul>
+          
+          <h3>5. Contacto</h3>
+          <p>Si tiene dudas sobre esta Política de Cookies, puede ponerse en contacto con nosotros en:<br>
+          <strong>info@lemi.es</strong></p>
+        `
+      }
+    };
+
+    // Open legal modal function
+    function openLegalModal(legalType) {
+      if (legalDocuments[legalType]) {
+        modalLegalTitle.textContent = legalDocuments[legalType].title;
+        legalContent.innerHTML = legalDocuments[legalType].content;
+        modalLegal.classList.remove('hidden');
+        setTimeout(() => {
+          modalOverlayLegal.classList.add('active');
+        }, 10);
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    // Close legal modal function
+    function closeLegalModal() {
+      modalOverlayLegal.classList.remove('active');
+      setTimeout(() => {
+        modalLegal.classList.add('hidden');
+      }, 300);
+      document.body.style.overflow = 'auto';
+    }
+
+    // Event listeners for legal links
+    legalLinks.forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const legalType = this.getAttribute('data-legal-type');
+        openLegalModal(legalType);
+      });
+    });
+
+    // Event listeners for closing legal modal
+    if (closeModalLegalBtn) closeModalLegalBtn.addEventListener('click', closeLegalModal);
+    if (modalOverlayLegal) modalOverlayLegal.addEventListener('click', closeLegalModal);
+    if (acceptLegalBtn) acceptLegalBtn.addEventListener('click', closeLegalModal);
+  
+}
+
+     // 🔚 CIERRA EL DOMContentLoaded
+
+  // Mobile menu functionality
+  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  if (mobileMenuBtn && mobileMenu) {
+    mobileMenuBtn.addEventListener('click', function () {
+      mobileMenu.classList.toggle('hidden');
+      mobileMenu.classList.toggle('open');
+
+      // Cambiar icono del botón
+      const icon = mobileMenuBtn.querySelector('svg');
+      if (mobileMenu.classList.contains('hidden')) {
+        icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>';
+      } else {
+        icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>';
+      }
+    });
+
+    // Cerrar menú al hacer clic en un enlace
+    const mobileLinks = mobileMenu.querySelectorAll('a');
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', function () {
+        mobileMenu.classList.add('hidden');
+        mobileMenu.classList.remove('open');
+        mobileMenuBtn.querySelector('svg').innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>';
+      });
+    });
+    // CIF/NIF validation function
+    function validateCIF(cif) {
+      // Eliminar espacios y convertir a mayúsculas
+      cif = cif.trim().toUpperCase();
+
+      // Patrón para CIF (Letra + 7 u 8 números)
+      const cifPattern = /^[ABCDEFGHJNPQRSUVW]{1}\d{7}[\dJ]$/;
+
+      // Patrón para NIF (8 números + Letra)
+      const nifPattern = /^\d{8}[TRWAGMYFPDXBNJZSQVHLCKET]$/;
+
+      // Validar formato
+      if (!cifPattern.test(cif) && !nifPattern.test(cif)) {
+        return false;
+      }
+
+      return true;
+    }
+  }
+</script>
+
+</html>
